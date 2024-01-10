@@ -71,7 +71,7 @@ export default function Header(){
                  <nav className='flex w-full justify-between max-w-[800px] text-black navbar'>
                     <NavLink to='/'>Home</NavLink>
                     <NavLink to='/'>About</NavLink>
-                    <div className="dropdown">
+                    <div className="dropdown dropdown-hover">
                         <div tabIndex={0} role="button">
                            Get Involved
                         </div>
@@ -81,7 +81,7 @@ export default function Header(){
                         <NavLink to='/'>Volunteer</NavLink>
                         </div>
                     </div>
-                    <div className="dropdown h-fit">
+                    <div className="dropdown dropdown-hover">
                         <div tabIndex={0} role="button">
                            Adopt
                         </div>
