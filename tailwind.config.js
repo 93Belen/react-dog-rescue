@@ -5,6 +5,13 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      'blue':'#1D818B',
+      'lightblue':'#46AEB9',
+      'yellow':"#F1EB98",
+      'black':'#313231',
+      'white':'#F9F8F8',
+    },
   },
   plugins: [require("daisyui")],
 }
