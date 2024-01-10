@@ -12,12 +12,12 @@ export default function Header(){
 
 
     return (
-        <header className={`${open ? 'bg-blue pb-0' : 'bg-white'} w-full p-4 overflow-x-hidden`}>
+        <header className={`${open ? 'bg-blue pb-0' : 'bg-white'} w-full md:h-fit p-4 md:bg-white overflow-x-hidden`}>
             {/*  visible part of header */}
-            <div className='flex justify-between w-full'>
+            <div className='flex justify-between w-full md:h-[30vh] gap-20'>
                 {/* LOGO */}
                 <div>
-                    <img src='/logo.png'/>
+                    <img src='/logo-1.png'/>
                 </div>
                 {/* =============== MOBILE ICON ============================== */}
                 <div className='md:hidden'>
@@ -67,13 +67,41 @@ export default function Header(){
                         </AnimatePresence>
                 </div>
                  {/* =============== DESKTOP NAV ============================== */}
+                 <div className='hidden md:flex w-full justify-end h-fit'>
+                 <nav className='flex w-full justify-between max-w-[800px] text-black navbar'>
+                    <NavLink to='/'>Home</NavLink>
+                    <NavLink to='/'>About</NavLink>
+                    <div className="dropdown">
+                        <div tabIndex={0} role="button">
+                           Get Involved
+                        </div>
+                        <div tabIndex={0} className="menu dropdown-content flex flex-col gap-4 p-0"> 
+                        <NavLink to='/'>Donate</NavLink>
+                        <NavLink to='/'>Foster</NavLink>
+                        <NavLink to='/'>Volunteer</NavLink>
+                        </div>
+                    </div>
+                    <div className="dropdown h-fit">
+                        <div tabIndex={0} role="button">
+                           Adopt
+                        </div>
+                        <div tabIndex={0} className="menu dropdown-content flex flex-col gap-4 p-0"> 
+                            <NavLink to='/'>Adoptable Dogs</NavLink>
+                            <NavLink to='/'>Adoption Qualifications</NavLink>
+                            <NavLink to='/'>Adoption Application</NavLink>
+                        </div>
+                    </div>
+                    <NavLink to='/'>Events</NavLink>
+                    <NavLink to='/'>Contact</NavLink>
+                </nav>
+                 </div>
             </div>
             {/* MOBILE NAV - toggleable part of header */}
             <AnimatePresence>
                 {open && (
-                <motion.nav className='navbar bg-gradient-to-b from-blue to-lightblue ml-[-15px] p-4 flex flex-col h-fit min-h-[90vh] justify-around bg-blue w-screen text-center text-white font-[600] text-[2rem]'>
+                <motion.nav className='navbar bg-gradient-to-b from-blue to-lightblue ml-[-15px] p-4 flex flex-col h-fit min-h-[90vh] justify-around bg-blue w-screen text-center text-white font-[600] text-[2rem] md:hidden'>
                     <NavLink to='/'>Home</NavLink>
-                    <NavLink to='/'>About Us</NavLink>
+                    <NavLink to='/'>About</NavLink>
                     <div className="collapse h-fit">
                         <input type="checkbox" /> 
                         <h3 tabIndex={0} className="collapse-title p-0">
