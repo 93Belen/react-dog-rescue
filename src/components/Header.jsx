@@ -100,17 +100,17 @@ export default function Header(){
             <AnimatePresence>
                 {open && (
                 <motion.nav className='navbar bg-gradient-to-b from-blue to-lightblue ml-[-15px] p-4 flex flex-col h-fit min-h-[90vh] justify-around bg-blue w-screen text-center text-white font-[600] text-[2rem] md:hidden'>
-                    <NavLink to='/'>Home</NavLink>
-                    <NavLink to='/'>About</NavLink>
+                    <NavLink onClick={toggleOpen} to='/'>Home</NavLink>
+                    <NavLink onClick={toggleOpen} to='/'>About</NavLink>
                     <div className="collapse h-fit">
                         <input type="checkbox" /> 
                         <h3 tabIndex={0} className="collapse-title p-0">
                            Get Involved
                         </h3>
                         <div tabIndex={0} className="collapse-content flex flex-col gap-4 font-[400] text-[1.5rem]"> 
-                        <NavLink to='/'>Donate</NavLink>
-                        <NavLink to='/'>Foster</NavLink>
-                        <NavLink to='/'>Volunteer</NavLink>
+                        <NavLink onClick={toggleOpen} to='/'>Donate</NavLink>
+                        <NavLink onClick={toggleOpen} to='/'>Foster</NavLink>
+                        <NavLink onClick={toggleOpen} to='/'>Volunteer</NavLink>
                         </div>
                     </div>
                     <div className="collapse h-fit">
@@ -119,13 +119,13 @@ export default function Header(){
                            Adopt
                         </h3>
                         <div tabIndex={0} className="collapse-content flex flex-col gap-4 font-[400] text-[1.5rem]"> 
-                            <NavLink to='/'>Dogs</NavLink>
-                            <NavLink to='/'>Qualifications</NavLink>
-                            <NavLink to='/'>Application</NavLink>
+                            <NavLink onClick={toggleOpen} to='/'>Dogs</NavLink>
+                            <NavLink onClick={toggleOpen} to='/'>Qualifications</NavLink>
+                            <NavLink onClick={toggleOpen} to='/'>Application</NavLink>
                         </div>
                     </div>
-                    <NavLink to='/'>Events</NavLink>
-                    <NavLink to='/'>Contact</NavLink>
+                    <NavLink onClick={toggleOpen} to='/'>Events</NavLink>
+                    <NavLink onClick={toggleOpen} to='/'>Contact</NavLink>
                     <div></div>
                     <div></div>
                 </motion.nav>
