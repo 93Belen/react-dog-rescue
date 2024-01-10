@@ -86,9 +86,9 @@ export default function Header(){
                            Adopt
                         </div>
                         <div tabIndex={0} className="menu dropdown-content flex flex-col gap-4 p-0"> 
-                            <NavLink to='/'>Adoptable Dogs</NavLink>
-                            <NavLink to='/'>Adoption Qualifications</NavLink>
-                            <NavLink to='/'>Adoption Application</NavLink>
+                            <NavLink to='/'>Dogs</NavLink>
+                            <NavLink to='/'>Qualifications</NavLink>
+                            <NavLink to='/'>Application</NavLink>
                         </div>
                     </div>
                     <NavLink to='/'>Events</NavLink>
@@ -119,9 +119,9 @@ export default function Header(){
                            Adopt
                         </h3>
                         <div tabIndex={0} className="collapse-content flex flex-col gap-4 font-[400] text-[1.5rem]"> 
-                            <NavLink to='/'>Adoptable Dogs</NavLink>
-                            <NavLink to='/'>Adoption Qualifications</NavLink>
-                            <NavLink to='/'>Adoption Application</NavLink>
+                            <NavLink to='/'>Dogs</NavLink>
+                            <NavLink to='/'>Qualifications</NavLink>
+                            <NavLink to='/'>Application</NavLink>
                         </div>
                     </div>
                     <NavLink to='/'>Events</NavLink>
