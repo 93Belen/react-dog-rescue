@@ -42,7 +42,7 @@ export default function Footer(){
             {/* COMPANY INFO */}
             <section className='col-start-2  text-white h-fit md:col-start-1 md:row-start-1 row-span-2'>
                 <h3>COMPANY NAME</h3>
-                <p>Copyright © 2023 Lucky 13 Rescue Inc. - A Lucky Rescue for the Unlucky - All Rights Reserved.</p>
+                <p className='text-[0.8rem]'>Copyright © 2023 Lucky 13 Rescue Inc. - A Lucky Rescue for the Unlucky - All Rights Reserved.</p>
             </section>
             {/* SOCIAL MEDIA */}
             <section className='flex md:self-start flex-col col-start-1 row-span-2 row-start-2 w-fit gap-2 md:col-start-3 md:flex-row md:w-[50%] md:min-w-[200px] md:justify-between'>
