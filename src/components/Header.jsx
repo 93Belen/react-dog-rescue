@@ -12,9 +12,9 @@ export default function Header(){
 
 
     return (
-        <header className={`${open ? 'bg-blue pb-0' : 'bg-white'} w-full md:h-fit p-4 md:bg-white overflow-x-hidden`}>
+        <header className={`${open ? 'bg-blue pb-0' : 'bg-white'} w-full md:h-fit p-4  md:bg-white overflow-x-hidden`}>
             {/*  visible part of header */}
-            <div className='flex justify-between w-full md:h-[30vh] gap-20'>
+            <div className='flex justify-between w-full md:h-[140px] gap-20'>
                 {/* LOGO */}
                 <div>
                     <img src='/logo-1.png'/>

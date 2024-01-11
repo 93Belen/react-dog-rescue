@@ -30,7 +30,7 @@ function App() {
         </p>
         <ApplyButton/>
       </section>
-      <section className='flex flex-col gap-6 px-6 py-12 md:px-10 xl:px-32 py-12'>
+      <section className='flex flex-col gap-6 px-6 py-12 md:px-10 xl:px-32 py-12 md:grid grid-col-2'>
       <h2 className='text-[2rem]'>Adoption Application</h2>
         <ol>
         <li>1. Fill out application</li>
@@ -39,8 +39,9 @@ function App() {
         <li>4. Home check required.</li>
         </ol>
         <AdoptButton />
+        <img className='md:col-start-2 md:row-start-1 hidden md:block md:row-span-2 md:w-auto md:h-full md:mx-auto object-cover object-[25%]' src="./troy-3.png" alt="" />
       </section>
-      <section className='bg-gradient-to-b from-blue to-lightblue md:px-10 xl:px-32 py-12 text-white px-6 py-12 flex flex-col gap-6'>
+      <section className='bg-gradient-to-b from-blue to-lightblue md:px-10 xl:px-32 py-12 text-white px-6 py-12 flex flex-col gap-6 md:grid grid-cols-2'>
       <h2 className='text-[2rem]'>Donate</h2>
         <p>
         There are numerous ways you can donate to Lucky 13 including:
@@ -52,6 +53,7 @@ function App() {
         Our rescue is run 100% on donations, so we thank you in advance for your generosity!
         </p>
         <DonateButton/>
+        <img className='w-full md:col-start-1 md:row-start-1 md:row-span-3 md:w-auto md:h-[90%] md:mx-auto object-cover object-[25%]' src="./troy-2.png" alt="" />
       </section>
       <section className='text-center px-6 py-12 flex flex-col gap-6'>
         <h2 className='text-[2rem]'>Sponsors</h2>
