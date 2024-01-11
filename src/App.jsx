@@ -10,7 +10,7 @@ function App() {
   return (
     <Layout>
     <div className="App w-full text-black font-[300] h-fit text-[1.25rem]">
-      <section className='flex box-border flex-col gap-6 px-4 md:px-10 xl:px-32 py-12 pt-4 md:grid md:grid-cols-2 md:gap-y-10 md:gap-x-12 md:p-12 md:grid-rows-[10%_80%] h-fit'>
+      <section className='flex box-border md:pb-40 flex-col gap-6 px-4 md:px-10 xl:px-32 py-12 pt-4 md:grid md:grid-cols-2 md:gap-y-10 md:gap-x-12 md:p-12 md:grid-rows-[10%_80%] h-fit'>
           <h1 className='text-[2.5rem] h-fit'>Lucky 13</h1>
           <motion.p 
           initial={{x: -250}}
@@ -29,7 +29,7 @@ function App() {
           whileInView={{ opacity: 1}}
           transition={{duration: 0.3}}
           viewport={{ once: true }}
-           className='w-full rounded-lg md:col-start-2 md:row-start-2 md:row-span-2 md:w-auto md:h-[80%] md:mx-auto object-cover object-[25%]' src="./troy.png" alt="" />
+          className='w-full col-start-2 row-start-1 row-span-3 rounded-lg md:w-auto md:h-full md:mx-auto object-cover object-[35%]' src="./troy.png" alt="" />
       </section>
       <section className='bg-gradient-to-b from-blue to-lightblue text-white px-6 py-12 text-center flex flex-col items-center gap-6 md:gap-12'>
         <h2 className='text-[2rem]'>Foster</h2>
