@@ -45,7 +45,7 @@ export default function Footer(){
                 <p>Copyright © 2023 Lucky 13 Rescue Inc. - A Lucky Rescue for the Unlucky - All Rights Reserved.</p>
             </section>
             {/* SOCIAL MEDIA */}
-            <section className='flex flex-col col-start-1 row-span-2 row-start-2 gap-2 md:col-start-3 md:flex-row md:w-[50%] md:min-w-[250px] md:justify-between'>
+            <section className='flex flex-col col-start-1 row-span-2 row-start-2 w-fit gap-2 md:col-start-3 md:flex-row md:w-[50%] md:min-w-[250px] md:justify-between'>
                 <Facebook/>
                 <X/>
                 <Instagram />
