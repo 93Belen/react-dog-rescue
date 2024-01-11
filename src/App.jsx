@@ -7,17 +7,17 @@ import Layout from './components/Layout';
 function App() {
   return (
     <Layout>
-    <div className="App w-full text-black font-[300] text-[1.25rem]">
-      <section className='flex flex-col gap-6 px-4 py-12 pt-4'>
-          <h1 className='text-[2.5rem]'>Lucky 13</h1>
-          <p>Lucky 13 Rescue is an organization dedicated to the rescue and aid of homeless
+    <div className="App w-full text-black font-[300] h-fit text-[1.25rem]">
+      <section className='flex box-border flex-col gap-6 px-4 md:px-18 py-12 pt-4 md:grid md:grid-cols-2 md:gap-y-10 md:gap-x-12 md:p-12 md:grid-rows-[10%_80%] h-fit'>
+          <h1 className='text-[2.5rem] h-fit'>Lucky 13</h1>
+          <p className='md:col-start-1 md:max-w-[500px]'>Lucky 13 Rescue is an organization dedicated to the rescue and aid of homeless
             and neglected dogs in the Kansas City metro and surrounding rural areas. 
             We do not limit our efforts to a specific breed, but rather strive to assist 
             any dog that is facing neglect, homelessness, abuse or death. Our ultimate goal 
             is to rehabilitate each canine in our care through placement in loving fosters homes 
             until they can be carefully matched with adoptive families. <br />
             We are a foster based rescue as we do not have a facility to intake dogs on the spot.</p>
-          <img className='w-full' src="./troy.png" alt="" />
+          <img className='w-full md:col-start-2 md:row-start-2 md:row-span-2 md:w-auto md:h-[90%] md:mx-auto object-cover object-[25%]' src="./troy.png" alt="" />
       </section>
       <section className='bg-gradient-to-b from-blue to-lightblue text-white px-6 py-12 text-center flex flex-col items-center gap-6'>
         <h2 className='text-[2rem]'>Foster</h2>
