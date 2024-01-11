@@ -49,17 +49,36 @@ function App() {
       </section>
       <section className='flex flex-col gap-6 px-6 py-12 md:px-10 xl:px-32 py-12 md:grid grid-col-2'>
       <h2 className='text-[2rem]'>Adoption Application</h2>
-        <motion.ol
+        <ol>
+        <motion.li
         initial={{x: -250}}
         whileInView={{ x: 0}}
-        transition={{duration: 0.5}}
+        transition={{duration: 0.5, delay: 0}}
         viewport={{ once: true }}
-        >
-        <li>1. Fill out application</li>
-        <li>2. Meet and greet scheduled once approved.</li>
-        <li>3. If the meet and greet goes well, you may possibly be able to adopt at that time.</li>
-        <li>4. Home check required.</li>
-        </motion.ol>
+        className='col-start-1'
+        >1. Fill out application</motion.li>
+                <motion.li
+        initial={{x: -250}}
+        whileInView={{ x: 0}}
+        transition={{duration: 0.5, delay: 0.1}}
+        viewport={{ once: true }}
+        className='col-start-1'
+        >2. Meet and greet scheduled once approved.</motion.li>
+                <motion.li
+        initial={{x: -250}}
+        whileInView={{ x: 0}}
+        transition={{duration: 0.5, delay: 0.2}}
+        viewport={{ once: true }}
+        className='col-start-1'
+        >3. If the meet and greet goes well, you may possibly be able to adopt at that time.</motion.li>
+                <motion.li
+        initial={{x: -250}}
+        whileInView={{ x: 0}}
+        transition={{duration: 0.5, delay: 0.3}}
+        viewport={{ once: true }}
+        className='col-start-1'
+        >4. Home check required.</motion.li>
+        </ol>
         <AdoptButton />
         <img
           className='md:col-start-2 rounded-lg md:row-start-1 hidden md:block md:row-span-2 md:w-auto md:h-full md:mx-auto object-cover object-[25%]' src="./troy-3.png" alt="" />
@@ -69,25 +88,43 @@ function App() {
         <motion.p
         initial={{x: 250}}
         whileInView={{ x: 0}}
-        transition={{duration: 0.5}}
+        transition={{duration: 0.5, delay: 0}}
         viewport={{ once: true }}
         >
         There are numerous ways you can donate to Lucky 13 including:
-        <ul className='list-disc'>
-        <li>Monetary Donations</li>
-        <li>Monthly Donor Programs</li>
-        <li>Goods and Services</li>
-        </ul>
-        Our rescue is run 100% on donations, so we thank you in advance for your generosity!
-        </motion.p>
-        <DonateButton/>
-        <motion.img
-          initial={{ opacity: 0}}
-          whileInView={{ opacity: 1}}
-          transition={{duration: 0.3}}
+          <ul className='list-disc'>
+                  <motion.li
+          initial={{x: 250}}
+          whileInView={{ x: 0}}
+          transition={{duration: 0.5, delay: 0.1}}
           viewport={{ once: true }}
-          className='w-full rounded-lg md:col-start-1 md:row-start-1 md:row-span-3 md:w-auto md:h-[90%] md:mx-auto object-cover object-[25%]' src="./troy-2.png" alt="" />
-      </section>
+          className='col-start-1'
+          >Monetary Donations</motion.li>
+                  <motion.li
+          initial={{x: 250}}
+          whileInView={{ x: 0}}
+          transition={{duration: 0.5, delay: 0.2}}
+          viewport={{ once: true }}
+          className='col-start-1'
+          >Monthly Donor Programs</motion.li>
+                  <motion.li
+          initial={{x: 250}}
+          whileInView={{ x: 0}}
+          transition={{duration: 0.5, delay: 0.3}}
+          viewport={{ once: true }}
+          className='col-start-1'
+          >Goods and Services</motion.li>
+          </ul>
+          Our rescue is run 100% on donations, so we thank you in advance for your generosity!
+          </motion.p>
+          <DonateButton/>
+          <motion.img
+            initial={{ opacity: 0}}
+            whileInView={{ opacity: 1}}
+            transition={{duration: 0.3}}
+            viewport={{ once: true }}
+            className='w-full rounded-lg md:col-start-1 md:row-start-1 md:row-span-3 md:w-auto md:h-[90%] md:mx-auto object-cover object-[25%]' src="./troy-2.png" alt="" />
+        </section>
       <section className='text-center px-6 py-12 flex flex-col gap-6'>
         <h2 className='text-[2rem]'>Sponsors</h2>
         <div className='grid grid-cols-2 grid-rows-3 items-center justify-items-center gap-4 p-2 md:flex flex-row justify-around md:p-20'>
