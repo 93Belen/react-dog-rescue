@@ -79,7 +79,7 @@ export default function Header(){
                         <div tabIndex={0} className="menu dropdown-content flex flex-col gap-4 p-0"> 
                         <NavLink to='/'>Donate</NavLink>
                         <NavLink to='/foster'>Foster</NavLink>
-                        <NavLink to='/'>Volunteer</NavLink>
+                        <NavLink to='/volunteer'>Volunteer</NavLink>
                         </div>
                     </div>
                     <div className="dropdown dropdown-hover overflow-visible">
@@ -111,7 +111,7 @@ export default function Header(){
                         <div tabIndex={0} className="collapse-content flex flex-col gap-4 font-[400] text-[1.5rem]"> 
                         <NavLink onClick={toggleOpen} to='/'>Donate</NavLink>
                         <NavLink onClick={toggleOpen} to='/foster'>Foster</NavLink>
-                        <NavLink onClick={toggleOpen} to='/'>Volunteer</NavLink>
+                        <NavLink onClick={toggleOpen} to='/volunteer'>Volunteer</NavLink>
                         </div>
                     </div>
                     <div className="collapse h-fit">

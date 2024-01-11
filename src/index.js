@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import About from './components/pages/About';
 import Foster from './components/pages/Foster';
+import Volunteer from './components/pages/Volunteer';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: 'foster',
     element: <Foster/>
+  },
+  {
+    path: 'volunteer',
+    element: <Volunteer/>
   }
 ]);
 
