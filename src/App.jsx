@@ -64,7 +64,7 @@ function App() {
         <img
           className='md:col-start-2 rounded-lg md:row-start-1 hidden md:block md:row-span-2 md:w-auto md:h-full md:mx-auto object-cover object-[25%]' src="./troy-3.png" alt="" />
       </section>
-      <section className='bg-gradient-to-b from-blue to-lightblue md:px-10 xl:px-32 py-12 text-white px-6 py-12 flex flex-col gap-6 md:grid grid-cols-2'>
+      <section className='bg-gradient-to-b from-blue to-lightblue md:px-10 xl:px-32 py-12 text-white px-6 py-12 flex flex-col gap-6 md:grid md:gap-12 grid-cols-2'>
       <h2 className='text-[2rem]'>Donate</h2>
         <motion.p
         initial={{x: 250}}
