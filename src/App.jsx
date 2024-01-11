@@ -29,7 +29,7 @@ function App() {
           whileInView={{ opacity: 1}}
           transition={{duration: 0.3}}
           viewport={{ once: true }}
-          className='w-full col-start-2 row-start-1 row-span-3 rounded-lg md:w-auto md:h-full md:mx-auto object-cover object-[35%]' src="./troy.png" alt="" />
+          className='w-full col-start-2 row-start-1 row-span-2 rounded-lg md:w-auto md:h-full md:mx-auto object-cover object-[35%]' src="./troy.png" alt="" />
       </section>
       <section className='bg-gradient-to-b from-blue to-lightblue text-white px-6 py-12 text-center flex flex-col items-center gap-6 md:gap-12'>
         <h2 className='text-[2rem]'>Foster</h2>
