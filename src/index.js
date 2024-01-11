@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import About from './components/pages/About';
+import Foster from './components/pages/Foster';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: 'about',
     element: <About/>
+  },
+  {
+    path: 'foster',
+    element: <Foster/>
   }
 ]);
 

@@ -78,7 +78,7 @@ export default function Header(){
                         </div>
                         <div tabIndex={0} className="menu dropdown-content flex flex-col gap-4 p-0"> 
                         <NavLink to='/'>Donate</NavLink>
-                        <NavLink to='/'>Foster</NavLink>
+                        <NavLink to='/foster'>Foster</NavLink>
                         <NavLink to='/'>Volunteer</NavLink>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ export default function Header(){
                         </h3>
                         <div tabIndex={0} className="collapse-content flex flex-col gap-4 font-[400] text-[1.5rem]"> 
                         <NavLink onClick={toggleOpen} to='/'>Donate</NavLink>
-                        <NavLink onClick={toggleOpen} to='/'>Foster</NavLink>
+                        <NavLink onClick={toggleOpen} to='/foster'>Foster</NavLink>
                         <NavLink onClick={toggleOpen} to='/'>Volunteer</NavLink>
                         </div>
                     </div>
