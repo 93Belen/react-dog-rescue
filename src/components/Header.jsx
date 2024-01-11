@@ -20,9 +20,10 @@ export default function Header(){
                     <img src='/logo-1.png'/>
                 </div>
                 {/* =============== MOBILE ICON ============================== */}
-                <div className='md:hidden'>
+                <div className='md:hidden w-[50px] h-[50px]'>
                     <AnimatePresence>
                         <motion.svg
+                        id='menuicon'
                         layout
                         onClick={toggleOpen}
                         animate={{
@@ -99,7 +100,7 @@ export default function Header(){
             {/* MOBILE NAV - toggleable part of header */}
             <AnimatePresence>
                 {open && (
-                <motion.nav className='navbar bg-gradient-to-b from-blue to-lightblue ml-[-15px] p-4 flex flex-col h-fit min-h-[90vh] justify-around bg-blue w-screen text-center text-white font-[600] text-[2rem] md:hidden'>
+                <motion.nav className='navbar overflow-x-hidden bg-gradient-to-b from-blue to-lightblue ml-[-15px] p-4 flex flex-col h-fit min-h-[90vh] justify-around bg-blue w-screen text-center text-white font-[600] text-[2rem] md:hidden'>
                     <NavLink onClick={toggleOpen} to='/'>Home</NavLink>
                     <NavLink onClick={toggleOpen} to='/'>About</NavLink>
                     <div className="collapse h-fit">

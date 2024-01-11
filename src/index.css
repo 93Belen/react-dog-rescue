@@ -19,3 +19,11 @@ p {
     font-weight: 400;
 }
 
+
+* {
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  
+
+  
