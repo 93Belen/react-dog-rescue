@@ -71,7 +71,7 @@ export default function Header(){
                  <div className='hidden md:flex w-full justify-end h-fit overflow-visible pr-5'>
                  <nav className='flex w-full justify-between max-w-[800px] text-black navbar overflow-visible'>
                     <NavLink to='/'>Home</NavLink>
-                    <NavLink to='/'>About</NavLink>
+                    <NavLink to='/about'>About</NavLink>
                     <div className="dropdown dropdown-hover overflow-visible">
                         <div tabIndex={0} role="button">
                            Get Involved
@@ -102,7 +102,7 @@ export default function Header(){
                 {open && (
                 <motion.nav className='navbar overflow-x-hidden bg-gradient-to-b from-blue to-lightblue ml-[-15px] p-4 flex flex-col h-fit min-h-[90vh] justify-around bg-blue w-screen text-center text-white font-[600] text-[2rem] md:hidden'>
                     <NavLink onClick={toggleOpen} to='/'>Home</NavLink>
-                    <NavLink onClick={toggleOpen} to='/'>About</NavLink>
+                    <NavLink onClick={toggleOpen} to='/about'>About</NavLink>
                     <div className="collapse h-fit">
                         <input type="checkbox" /> 
                         <h3 tabIndex={0} className="collapse-title p-0">
