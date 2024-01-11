@@ -4,7 +4,7 @@ import {motion} from "framer-motion"
 export default function About(){
     return (
         <Layout>
-            <div className='text-black w-full p-4 md:p-12 flex flex-col gap-6 md:grid grid-cols-2'>
+            <div className='text-black w-full xl:px-32 p-4 md:p-12 flex flex-col gap-6 md:grid grid-cols-2'>
                 <h1 className='text-[2.5rem] h-fit'>About Us</h1>
                 <motion.p
                  initial={{x: -250}}
