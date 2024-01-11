@@ -8,14 +8,14 @@ import Tiktok from './assets/Tiktok'
 
 export default function Footer(){
     return (
-        <footer className='p-4 md:p-12 h-fit bg-blue overflow-x-hidden gap-y-6 gap-x-4 grid grid-cols-[10%_90%] md:grid-cols-[20%_40%_40%] grid-rows-[repeat(3, fit-content)] md:grid-rows-2'>
+        <footer className='p-4 w-full md:p-12 h-fit bg-blue overflow-x-hidden gap-y-6 gap-x-4 grid grid-cols-[10%_90%] md:grid-cols-[25%_40%_35%] grid-rows-[repeat(3, fit-content)] md:grid-rows-2'>
             {/* NAVIGATION */}
-            <section className='collapse md:collapse-open md:row-span-2 col-span-2 md:col-start-2 md:col-span-1 text-white h-fit w-[90%] collapse-arrow'>
+            <section className='collapse md:collapse-open md:justify-self-end md:row-span-2 col-span-2 md:col-start-2 md:col-span-1 text-white h-fit w-[90%] collapse-arrow'>
                 <input className='md:hidden' type='checkbox'/>
                 <div className="collapse-title font-[700] md:hidden pl-0">
                     NAVIGATION
                 </div>
-                <div className="collapse-content md:justify-self-center pl-0 flex flex-col gap-2 text-[1rem] font-[300] md:grid md:grid-rows-4 md:grid-cols-2"> 
+                <div className="collapse-content md:pl-2 md:w-full md:justify-between pl-0 flex flex-col gap-2 text-[1rem] font-[300] md:grid md:grid-rows-4 md:grid-cols-2"> 
                 <NavLink to='/'>Foster</NavLink>
                 <NavLink to='/'>Volunteer</NavLink>
                 <NavLink to='/'>Dogs</NavLink>
@@ -40,12 +40,12 @@ export default function Footer(){
                 </svg></span>913.555.5555</p>
             </section>
             {/* COMPANY INFO */}
-            <section className='col-start-2 text-white h-fit md:col-start-1 md:row-start-1 row-span-2'>
+            <section className='col-start-2  text-white h-fit md:col-start-1 md:row-start-1 row-span-2'>
                 <h3>COMPANY NAME</h3>
                 <p>Copyright © 2023 Lucky 13 Rescue Inc. - A Lucky Rescue for the Unlucky - All Rights Reserved.</p>
             </section>
             {/* SOCIAL MEDIA */}
-            <section className='flex flex-col col-start-1 row-span-2 row-start-2 w-fit gap-2 md:col-start-3 md:flex-row md:w-[50%] md:min-w-[250px] md:justify-between'>
+            <section className='flex md:self-start flex-col col-start-1 row-span-2 row-start-2 w-fit gap-2 md:col-start-3 md:flex-row md:w-[50%] md:min-w-[200px] md:justify-between'>
                 <Facebook/>
                 <X/>
                 <Instagram />
