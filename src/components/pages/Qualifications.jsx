@@ -1,6 +1,7 @@
 import Layout from "../Layout";
 import { motion } from "framer-motion";
 
+
 export default function Qualifications(){
     return (
         <Layout>
@@ -92,8 +93,223 @@ export default function Qualifications(){
                     We hope you are too.
                     </p>
                 </section>
-                <section className='xl:px-32 w-full p-4 md:p-12'>
+                <section className='xl:px-32 w-full p-4 md:p-12 h-fit text-black flex flex-col gap-6'>
                     <h3 className='text-[2rem]'>Frequanly Asked Questions</h3>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        What are your adoption fees?
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>Our adoption fees vary per animal and are listed on the profile for each animal. 
+                            Please just click on their picture/bio for more information.</p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        Where are you located? 
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>Lucky 13 Rescue does not have a physical location.  All of our dogs live 
+                            in loving foster homes throughout the Kansas City area. This allows fosters to 
+                            get to know each dog personally, 
+                            so we can find the very best home for them.</p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        What are your hours?
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>As a foster based rescue, every person with Lucky 13 Rescue is a volunteer. 
+                            Because we do not have a facility, we do not have “open” hours but can be 
+                            contacted between 8am and 9pm. Because our volunteers also work full time jobs, 
+                            please be patient when awaiting a return call. </p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        What is the best way to reach Lucky 13 Rescue?
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>The best way to reach us is to email at info@lucky13rescue.org or to Facebook Message us.  
+                            While we do have a phone number, we rely on a volunteer to answer the phone at certain hours.  
+                            Emails are answered quickly.  
+                            You can contact our adoption coordinator at adoptions@lucky13rescue.org.</p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        Can I stop in to visit dogs and play with puppies?
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>No. We require an approved application to be on file before meeting our dogs/puppies. 
+                            In addition, our dogs live in foster homes, so we must work around the foster parents’ schedule.</p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        How do I apply to adopt?
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>Apply with the online application found on the animal’s profile or go here.</p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        How long does the application process take?
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>The time that approval takes can be dependent on how quickly we are able 
+                            to confirm your landlord, veterinarian, and reference checks. Adoption 
+                            time is also dependent upon everyone’s schedule for the introduction and 
+                            home visit. Please keep in mind that we are a volunteer run organization 
+                            so schedules can vary. If everything goes as it should, approval takes 
+                            about 48 hours, and the time from application to adoption can all happen
+                             within a week.</p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        How do I know if the dog that I want is available?
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>Each dog is available unless “pending adoption” is listed on their photo/bio. 
+                            We process applications in the order in which they were received, and schedule 
+                            meet and greets accordingly. There is a possibility that the dog is not yet on 
+                            hold but does have an application in front of yours. </p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        Can you hold a dog for me?
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>We can only hold a dog/puppy for an adopter if they are not yet ready 
+                            to be adopted. If the dog/puppy has been spayed or neutered and is 
+                            ready to go home, we cannot hold them for more than 24 hours once you 
+                            have met with them. As for puppies who are not ready to go to their 
+                            forever homes just yet, they will be put on hold after a meet and greet 
+                            until they are ready to go home.  We will require their adoption fee to 
+                            be paid as a deposit. This fee is not refundable if you change your mind. 
+                            We cannot hold them past this date. Please meet the puppy/dog as soon as possible. 
+                            If you can't meet the dog/puppy for a week, it's possible that someone else may meet 
+                            the them before you are able to.  We cannot hold a dog/puppy for you while waiting for you to meet them, 
+                            when there are other interested parties.  After a meet and greet, please let us know 
+                            within 24 hours if you would like to adopt the dog/puppy that you met.  
+                            If you do not notify the foster, or email/call Lucky 13 Rescue within 24 hours 
+                            of your meet and greet, we may move on to the next application.  
+                            We will not notify you before moving on, as it is up to you to contact us within 24 hours. </p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        What is your process?
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>Our first step in the process is to have you fill out an application. 
+                            Please fill it out completely, as incomplete applications will NOT be 
+                            processed. Lucky 13 Rescue is made up of an entirely volunteer "staff". 
+                            We simply do not have the man power to track down missing answers. Once 
+                            your application is approved, we will forward your information to the foster.
+                             All of our fosters are volunteers who have families and jobs, so please 
+                             allow 24 hours for the foster to contact you, after application approval. 
+                             We do the majority of our communicating thru email, so please add to your 
+                             "safe" list to ensure you get our emails and can respond in a timely manner. 
+                             The foster will set up a time for you to come meet the dog/puppy that you are 
+                             interested in.  If the foster attempts to contact you and leaves a message, 
+                             please return their call within 24 hours. After that time, we may move on to the 
+                             next applicant in line. Please plan to schedule this meeting within 48 hours of 
+                             contact with the foster. If the meet and greet goes well, and the foster believes 
+                             you are a good fit for the dog, the dog will be put on hold for you. We will then 
+                             schedule a volunteer to contact you to schedule a home visit. You will then be notified 
+                             of the date and time that you may pick up your new family member.</p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        Can the foster bring the dog to my home to meet me?
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>For puppies, we require that the meet and greet take place at the fosters’ location. 
+                            This is to protect the health of the puppies in our care. You are welcome to bring 
+                            your fully vaccinated dog to the meet and greet. Meet and greets for adult dogs may 
+                            be scheduled in a neutral location.</p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        Am I required to have a fenced yard?
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>We do not require that you have a fence, we do require that you have a plan 
+                            for how the dog will receive adequate exercise. Some dogs will require a fence, 
+                            and we will give that information in their bio on the website.</p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        What is included in the adoption fee?
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>All of our animals come up to date on age appropriate vaccines, 
+                            which include: Canine Distemper, Adenovirus Type 1, Adenovirus Type 2 
+                            (Respiratory Disease), Parainfluenza, and Parvovirus. If puppies are 
+                            adopted at a young age, they will still require a puppy booster 
+                            vaccination of which the adopting family will be responsible for.
+                            Rabies is included for those over 4 months. Our dogs over 6 months of age are tested for heartworms 
+                            and if negative, kept on heartworm prevention throughout their stay. (After adopters are asked to 
+                            continue this very important prevention). If dogs test positive for heartworms, they are treated 
+                            per our vet partners' recommendation. All dogs/puppies are kept on flea prevention for the length 
+                            of their stay with us. Our dogs/puppies all come spayed or neutered and microchipped. NO animals 
+                            will be sent home without being spayed or neutered, there are no exceptions to this policy. </p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        What is the dog/puppy I’m interested mixed with?
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>In most cases, visual breed identification is unreliable, even by 
+                            “trained” eyes. So, for the majority of the dogs/puppies, we are 
+                            merely guessing, with our vets' assistance, at the predominant 
+                            breed or a mix of breeds based on certain features. This is only 
+                            a guess, and no guarantees are made as to the breed of the dog 
+                            unless we have done a DNA test. If you live in a breed ban area, 
+                            it is your responsibility to make sure the dog does not violate 
+                            the requirement of your city. All of the information that we have 
+                            is given to you. So, if a dog is listed as a Pointer mix, that means 
+                            it’s features most resemble a Pointer, and we have no way of knowing 
+                            for sure what else the dog may be mixed with. We strive to get to know 
+                            each dog on a personal level, and describe them based on behavior and 
+                            personality, rather than simply by breed. </p>
+                        </div>
+                    </section>
+                    <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
+                        <input type='checkbox'/>
+                        <div className="collapse-title font-[700]">
+                        Where does my donation/adoption fee go? 
+                        </div>
+                        <div className="collapse-content flex flex-col gap-6 text-[1rem] font-[300]"> 
+                        <p>We are completely foster based and run 100% by volunteer. 
+                            Every hour spent running Lucky 13 Rescue is spent by a volunteer. 
+                            This means we have no overhead and every dollar brought in goes directly 
+                            back to the dogs in our care.  </p>
+                        </div>
+                    </section>
                 </section>
             </div>
         </Layout>
