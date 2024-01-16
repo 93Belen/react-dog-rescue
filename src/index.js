@@ -10,6 +10,7 @@ import About from './components/pages/About';
 import Foster from './components/pages/Foster';
 import Volunteer from './components/pages/Volunteer';
 import Qualifications from './components/pages/Qualifications';
+import Contact from './components/pages/Contact';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: 'qualifications',
     element: <Qualifications/>
+  },
+  {
+    path: 'contact',
+    element: <Contact/>
   }
 ]);
 

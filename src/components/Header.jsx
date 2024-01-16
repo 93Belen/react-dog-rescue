@@ -93,7 +93,7 @@ export default function Header(){
                         </div>
                     </div>
                     <NavLink to='/'>Events</NavLink>
-                    <NavLink to='/'>Contact</NavLink>
+                    <NavLink to='/contact'>Contact</NavLink>
                 </nav>
                  </div>
             </div>
@@ -126,7 +126,7 @@ export default function Header(){
                         </div>
                     </div>
                     <NavLink onClick={toggleOpen} to='/'>Events</NavLink>
-                    <NavLink onClick={toggleOpen} to='/'>Contact</NavLink>
+                    <NavLink onClick={toggleOpen} to='/contact'>Contact</NavLink>
                     <div></div>
                     <div></div>
                 </motion.nav>
