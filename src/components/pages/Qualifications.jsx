@@ -93,7 +93,7 @@ export default function Qualifications(){
                     We hope you are too.
                     </p>
                 </section>
-                <section className='xl:px-32 w-full p-4 md:p-12 h-fit text-black flex flex-col gap-6'>
+                <section className='xl:px-32 w-full p-4 md:p-12 h-fit text-black flex flex-col gap-6 pb-20'>
                     <h3 className='text-[2rem]'>Frequanly Asked Questions</h3>
                     <section className='collapse h-fit w-full collapse-arrow border-2 border-black rounded-[0px] px-4'>
                         <input type='checkbox'/>
