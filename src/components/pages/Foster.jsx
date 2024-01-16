@@ -1,5 +1,6 @@
 import Layout from "../Layout";
 import { motion } from "framer-motion";
+import ApplyButton from "../ApplyButton";
 
 export default function Foster(){
     return (
@@ -52,6 +53,7 @@ export default function Foster(){
                  whileInView={{ x: 0}}
                  transition={{duration: 0.5}}
                  viewport={{ once: true }}
+                 className='flex flex-col gap-6'
                 >
                 How long will I have to foster?​
                 We cannot predict how long a pet will remain in foster care. 
@@ -69,6 +71,7 @@ export default function Foster(){
                 If you feel you can help in any way, please fill out the application below. 
                 If you have specific questions about our foster program, please contact us 
                 at foster@lucky13rescue.org.   
+                <span><ApplyButton/></span>
                 </motion.p>
                 </section>
             </div>
