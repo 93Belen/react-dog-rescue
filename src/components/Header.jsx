@@ -88,7 +88,7 @@ export default function Header(){
                         </div>
                         <div tabIndex={0} className="menu dropdown-content flex flex-col gap-4 p-0"> 
                             <NavLink to='/'>Dogs</NavLink>
-                            <NavLink to='/'>Qualifications</NavLink>
+                            <NavLink to='/qualifications'>Qualifications</NavLink>
                             <NavLink to='/'>Application</NavLink>
                         </div>
                     </div>
@@ -121,7 +121,7 @@ export default function Header(){
                         </h3>
                         <div tabIndex={0} className="collapse-content flex flex-col gap-4 font-[400] text-[1.5rem]"> 
                             <NavLink onClick={toggleOpen} to='/'>Dogs</NavLink>
-                            <NavLink onClick={toggleOpen} to='/'>Qualifications</NavLink>
+                            <NavLink onClick={toggleOpen} to='/qualifications'>Qualifications</NavLink>
                             <NavLink onClick={toggleOpen} to='/'>Application</NavLink>
                         </div>
                     </div>
