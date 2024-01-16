@@ -77,7 +77,7 @@ export default function Header(){
                            Get Involved
                         </div>
                         <div tabIndex={0} className="menu dropdown-content flex flex-col gap-4 p-0"> 
-                        <NavLink to='/'>Donate</NavLink>
+                        <NavLink to='/donate'>Donate</NavLink>
                         <NavLink to='/foster'>Foster</NavLink>
                         <NavLink to='/volunteer'>Volunteer</NavLink>
                         </div>
@@ -109,7 +109,7 @@ export default function Header(){
                            Get Involved
                         </h3>
                         <div tabIndex={0} className="collapse-content flex flex-col gap-4 font-[400] text-[1.5rem]"> 
-                        <NavLink onClick={toggleOpen} to='/'>Donate</NavLink>
+                        <NavLink onClick={toggleOpen} to='/donate'>Donate</NavLink>
                         <NavLink onClick={toggleOpen} to='/foster'>Foster</NavLink>
                         <NavLink onClick={toggleOpen} to='/volunteer'>Volunteer</NavLink>
                         </div>

@@ -11,6 +11,7 @@ import Foster from './components/pages/Foster';
 import Volunteer from './components/pages/Volunteer';
 import Qualifications from './components/pages/Qualifications';
 import Contact from './components/pages/Contact';
+import Donate from './components/pages/Donate';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: 'contact',
     element: <Contact/>
+  },
+  {
+    path: 'donate',
+    element: <Donate/>
   }
 ]);
 
