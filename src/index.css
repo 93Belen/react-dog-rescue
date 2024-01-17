@@ -26,4 +26,8 @@ p {
   }
   
 
+/* For IE and Edge */
+#shop-mobile-nav {
+    -ms-overflow-style: none;
+  }
   
