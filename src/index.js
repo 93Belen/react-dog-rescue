@@ -13,6 +13,7 @@ import Qualifications from './components/pages/Qualifications';
 import Contact from './components/pages/Contact';
 import Donate from './components/pages/Donate';
 import Events from './components/pages/Events';
+import Adopt from './components/pages/Adopt';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: 'events',
     element: <Events/>
+  },
+  {
+    path: 'adopt',
+    element: <Adopt/>
   }
 ]);
 
