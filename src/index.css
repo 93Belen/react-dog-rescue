@@ -30,4 +30,8 @@ p {
 #shop-mobile-nav {
     -ms-overflow-style: none;
   }
+  /* For IE and Edge */
+#shop-mobile-nav header {
+    -ms-overflow-style: none;
+  }
   
