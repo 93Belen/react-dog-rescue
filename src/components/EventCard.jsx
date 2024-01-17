@@ -9,9 +9,22 @@ export default function EventCard(props){
         whileHover={{scale: 1.07}}
         initial={{ rotate: 0, scale: 1}}
         viewport={{ once: true }}
-         className={`bg-blue justify-self-center h-[300px] min-h-fit w-full md:h-[350px] w-[90%] rounded-xl border-black border-2`}>
-            <div className='bg-white h-[95%] text-center p-4 flex flex-col justify-around items-center'>
-                               
+         className={`bg-blue justify-self-center h-[450px] w-full w-[90%] rounded-xl border-black border-2`}>
+            <div className='bg-white h-[95%] text-center p-4 grid grid-cols-[45%_55%] grid-rows-[35%_45%_20%]'>
+                <h3 className='flex flex-col justify-center items-center text-[2rem] border-r-8 border-yellow'><span>17</span> Dec</h3>
+                <h4 className='flex justify-center items-center text-[1.3rem] text-left p-2'>{title}</h4>
+                <p className='col-span-2 flex justify-center items-center text-left'>{text}</p>
+                <div className='col-span-2 flex flex-col justify-around'>
+                    <p className='flex'><span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="25" viewBox="0 0 17 25" fill="none">
+                    <ellipse cx="8.5" cy="7.8125" rx="8.5" ry="7.8125" fill="#F1EB98"/>
+                    <path d="M7.72727 25C11.0467 19.2032 12.9078 15.9531 16.2273 10.1562H0.772743C3.48865 15.9531 5.01136 19.2032 7.72727 25Z" fill="#F1EB98"/>
+                    </svg></span>7245 Central, Kansas City, MO</p>
+                    <p className='flex'><span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <circle cx="8.5" cy="8.5" r="7.5" stroke="#F1EB98" stroke-width="2"/>
+                    <line x1="8.65997" y1="4.08008" x2="8.65997" y2="8.84008" stroke="#F1EB98"/>
+                    <line x1="12.92" y1="9.33984" x2="8.15998" y2="9.33984" stroke="#F1EB98"/>
+                    </svg></span>11:30am - 12:30pm</p>
+                </div>
             </div>
         </motion.section>
     )
