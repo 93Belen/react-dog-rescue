@@ -14,7 +14,7 @@ export default function EventCard(props){
                 <h3 className='flex flex-col justify-center items-center text-[2rem] border-r-8 border-yellow'><span>17</span> Dec</h3>
                 <h4 className='flex items-center text-[1.3rem] text-left p-2 md:p-4'>{title}</h4>
                 <p className='col-span-2 md:col-start-2 md:col-span-1 flex justify-center items-center text-left'>{text}</p>
-                <div className='col-span-2 flex flex-col justify-around md:col-start-3 md:justify-self-center md:justify-center'>
+                <div className='col-span-2 flex flex-col md:gap-4 justify-around md:col-start-3 md:justify-self-center md:justify-center'>
                     <p className='flex gap-2 text-left'><span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="25" viewBox="0 0 17 25" fill="none">
                     <ellipse cx="8.5" cy="7.8125" rx="8.5" ry="7.8125" fill="#F1EB98"/>
                     <path d="M7.72727 25C11.0467 19.2032 12.9078 15.9531 16.2273 10.1562H0.772743C3.48865 15.9531 5.01136 19.2032 7.72727 25Z" fill="#F1EB98"/>
