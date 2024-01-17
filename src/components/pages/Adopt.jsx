@@ -9,7 +9,7 @@ export default function Adopt(){
                 </section>
                 <div
                 id="shop-mobile-nav"
-                className="md:w-full p-4 md:p-12 flex md:justify-center box-content overflow-x-auto box-content no-scrollbar"
+                className="md:w-full px-4 md:px-12 flex md:justify-center box-content overflow-x-auto box-content no-scrollbar"
                 >
                     <header className='flex navbar justify-around w-fit md:w-full md:max-w-[1100px] min-w-[1000px] md:pl-20 overflow-x-scroll no-scrollbar flex-nowrap md:flex-wrap'>
                     <details className="dropdown h-[200px] w-[10rem]">
