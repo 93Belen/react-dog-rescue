@@ -1,5 +1,5 @@
 import Layout from "../Layout";
-import DonationCard from "../DonationCard";
+import EventCard from "../EventCard";
 
 export default function Events(){
     return (
@@ -8,13 +8,12 @@ export default function Events(){
                 <section className='xl:px-32 w-full p-4 md:p-12 py-12 pt-4 flex flex-col gap-6'>
                     <h1 className='text-[2rem] md:text-[2.5rem] h-fit'>Events</h1>
                 </section>
-                <section className='flex flex-col gap-6 justify-center w-full items-center md:grid md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 xl:px-32 w-full p-4 md:p-12 py-12 pt-4'>
-                    <DonationCard title='Monthly contribution' text='Sign up for recurring monthly donations to help us continue our life-saving mission.' donateButton={true} />
-                    <DonationCard title='Paypal' text='Donate via PayPal' donateButton={true} />
-                    <DonationCard title='Venmo' text='Donate via Venmo - @lucky13rescue' donateButton={true} />
-                    <DonationCard title='Text to Donate' text='Simply text “LUCK” to 89871 to donate today!' donateButton={false} />
-                    <DonationCard title='Cash App' text='Donate via Cash App - $lucky13rescue' donateButton={true} />
-                    <DonationCard title='Check/Cash' text='Donate via Cash App - $lucky13rescue' donateButton={false} />
+                <section className='flex flex-col gap-6 justify-center w-full items-center xl:px-32 w-full p-4 md:p-12 py-12 pt-4'>
+                    <EventCard title='Puppy Yoga with Yoga Patch' text='Come puppy pose with us and Lucky 13 Rescue! Add some playfulness to your practice while supporting a local canine organization. Class will be...' />
+                    <EventCard title='Puppy Yoga with Yoga Patch' text='Come puppy pose with us and Lucky 13 Rescue! Add some playfulness to your practice while supporting a local canine organization. Class will be...' />
+                    <EventCard title='Puppy Yoga with Yoga Patch' text='Come puppy pose with us and Lucky 13 Rescue! Add some playfulness to your practice while supporting a local canine organization. Class will be...' />
+                    <EventCard title='Puppy Yoga with Yoga Patch' text='Come puppy pose with us and Lucky 13 Rescue! Add some playfulness to your practice while supporting a local canine organization. Class will be...' />
+                    <EventCard title='Puppy Yoga with Yoga Patch' text='Come puppy pose with us and Lucky 13 Rescue! Add some playfulness to your practice while supporting a local canine organization. Class will be...' />
                 </section>
             </div>
         </Layout>
