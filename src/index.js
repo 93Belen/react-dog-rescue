@@ -12,6 +12,7 @@ import Volunteer from './components/pages/Volunteer';
 import Qualifications from './components/pages/Qualifications';
 import Contact from './components/pages/Contact';
 import Donate from './components/pages/Donate';
+import Events from './components/pages/Events';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: 'donate',
     element: <Donate/>
+  },
+  {
+    path: 'events',
+    element: <Events/>
   }
 ]);
 
