@@ -106,11 +106,16 @@ export default function Adopt(){
                     </header>
                 </div>
                 <section className='xl:px-32 w-full p-4 md:p-12 py-12 flex flex-col gap-6 lg:grid grid-cols-2 2xl:grid-cols-3'>
-                    <DogCard/>
-                    <DogCard/>
-                    <DogCard/>
-                    <DogCard/>
-                    <DogCard/>
+                    <DogCard sex='Female' size='Small' breed='Pit Bull Mix' age='Young' />
+                    <DogCard sex='Male' size='Large' breed='Mix' age='Puppy' />
+                    <DogCard sex='Male' size='Large' breed='Rottwailer' age='Senior' />
+                    <DogCard sex='Female' size='Medium' breed='Chihuahua' age='Young' />
+                    <DogCard sex='Male' size='Small' breed='Bulldog' age='Young' />
+                    <DogCard sex='Female' size='Small' breed='Pit Bull Mix' age='Young' />
+                    <DogCard sex='Male' size='Large' breed='Mix' age='Puppy' />
+                    <DogCard sex='Male' size='Large' breed='Rottwailer' age='Senior' />
+                    <DogCard sex='Female' size='Medium' breed='Chihuahua' age='Young' />
+                    <DogCard sex='Male' size='Small' breed='Bulldog' age='Young' />
                 </section>
             </div>
         </Layout>
