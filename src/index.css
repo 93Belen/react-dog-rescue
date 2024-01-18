@@ -35,3 +35,6 @@ p {
     -ms-overflow-style: none;
   }
   
+  summary::-webkit-details-marker {
+    display: none;
+}
