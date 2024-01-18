@@ -9,9 +9,9 @@ export default function Adopt(){
                 </section>
                 <div
                 id="shop-mobile-nav"
-                className="w-full px-4 md:px-12 flex box-content overflow-x-auto no-scrollbar"
+                className="w-full px-4 md:px-12 flex box-content overflow-x-auto flex lg:justify-center no-scrollbar"
                 >
-                    <header className='flex justify-around w-fit h-fit min-w-[1300px] gap-4 overflow-x-scroll no-scrollbar flex-nowrap pr-20'>
+                    <header className='flex justify-around w-fit h-fit max-w-[1400px] min-w-[1000px] pr-20 gap-4 md:gap-2 overflow-x-scroll no-scrollbar flex-nowrap'>
                     <details className="h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Sex</summary>
                         <ul className="py-4 shadow z-[1] text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
