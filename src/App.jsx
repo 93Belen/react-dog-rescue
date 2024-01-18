@@ -17,7 +17,7 @@ function App() {
           whileInView={{ x: 0}}
           transition={{duration: 0.5}}
           viewport={{ once: true }}
-          className='md:col-start-1 xl:justify-self-end'>Lucky 13 Rescue is an organization dedicated to the rescue and aid of homeless
+          className='md:col-start-1 xl:justify-self-end h-fit'>Lucky 13 Rescue is an organization dedicated to the rescue and aid of homeless
             and neglected dogs in the Kansas City metro and surrounding rural areas. 
             We do not limit our efforts to a specific breed, but rather strive to assist 
             any dog that is facing neglect, homelessness, abuse or death. Our ultimate goal 
