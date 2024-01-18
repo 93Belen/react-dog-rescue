@@ -9,12 +9,12 @@ export default function Adopt(){
                 </section>
                 <div
                 id="shop-mobile-nav"
-                className="md:w-full px-4 md:px-12 flex md:justify-center box-content overflow-x-auto no-scrollbar"
+                className="w-full px-4 md:px-12 flex box-content overflow-x-auto no-scrollbar"
                 >
-                    <header className='flex navbar justify-around w-fit h-[250px] min-w-[1000px] md:pl-20 gap-4 overflow-x-scroll no-scrollbar flex-nowrap'>
-                    <details className="dropdown h-full w-[20rem]">
+                    <header className='flex justify-around w-fit h-fit min-w-[1300px] gap-4 overflow-x-scroll no-scrollbar flex-nowrap pr-20'>
+                    <details className="h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Sex</summary>
-                        <ul className="py-4 shadow menu dropdown-content z-[1] text-[1rem] font-[300] w-[10rem] bg-blue text-white mt-1">
+                        <ul className="py-4 shadow z-[1] text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
                             <label for="female">Female</label>
                             <input type="checkbox" id="female" name="female" />
@@ -27,7 +27,7 @@ export default function Adopt(){
                     </details> 
                     <details className="dropdown h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Attributes</summary>
-                        <ul className="py-4 shadow menu dropdown-content z-[1] text-[1rem] font-[300] w-[10rem] bg-blue text-white mt-1">
+                        <ul className="py-4 shadow z-[1] text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
                             <label for="female">Female</label>
                             <input type="checkbox" id="female" name="female" />
@@ -40,7 +40,7 @@ export default function Adopt(){
                     </details>   
                     <details className="dropdown h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Age</summary>
-                        <ul className="py-4 shadow menu dropdown-content z-[1] text-[1rem] font-[300] w-[10rem] bg-blue text-white mt-1">
+                        <ul className="py-4 shadow z-[1] text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
                             <label for="puppy">Puppy</label>
                             <input type="checkbox" id="puppy" name="puppy" />
@@ -61,7 +61,7 @@ export default function Adopt(){
                     </details> 
                     <details className="dropdown h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Breed</summary>
-                        <ul className="py-4 shadow menu dropdown-content z-[1] text-[1rem] font-[300] w-[10rem] bg-blue text-white mt-1">
+                        <ul className="py-4 shadow z-[1] text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
                             <label for="female">Female</label>
                             <input type="checkbox" id="female" name="female" />
@@ -74,7 +74,7 @@ export default function Adopt(){
                     </details> 
                     <details className="dropdown h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Size</summary>
-                        <ul className="py-4 shadow menu dropdown-content z-[1] text-[1rem] font-[300] w-[15rem] bg-blue text-white mt-1">
+                        <ul className="py-4 shadow z-[1] text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
                             <label for="small">Small (1 - 19lb)</label>
                             <input type="checkbox" id="small" name="small" />
@@ -91,7 +91,7 @@ export default function Adopt(){
                     </details> 
                     <details className="dropdown h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Sort</summary>
-                        <ul className="py-4 shadow menu dropdown-content z-[1] text-[1rem] font-[300] w-[10rem] bg-blue text-white mt-1">
+                        <ul className="py-4 shadow z-[1] text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
                             <label for="longest">Longest Stay</label>
                             <input type="checkbox" id="longest" name="longest" />
