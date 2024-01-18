@@ -1,3 +1,4 @@
+import DogCard from "../DogCard";
 import Layout from "../Layout";
 
 export default function Adopt(){
@@ -104,6 +105,13 @@ export default function Adopt(){
                     </details> 
                     </header>
                 </div>
+                <section className='xl:px-32 w-full p-4 md:p-12 py-12 flex flex-col gap-6 lg:grid grid-cols-2 2xl:grid-cols-3'>
+                    <DogCard/>
+                    <DogCard/>
+                    <DogCard/>
+                    <DogCard/>
+                    <DogCard/>
+                </section>
             </div>
         </Layout>
     )
