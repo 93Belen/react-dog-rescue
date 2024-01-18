@@ -14,7 +14,7 @@ export default function Adopt(){
                     <header className='flex justify-around w-fit h-fit max-w-[1400px] min-w-[1000px] pr-20 gap-4 md:gap-2 overflow-x-scroll no-scrollbar flex-nowrap'>
                     <details className="h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Sex</summary>
-                        <ul className="py-4 shadow z-[1] text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
+                        <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
                             <label for="female">Female</label>
                             <input type="checkbox" id="female" name="female" />
@@ -27,7 +27,7 @@ export default function Adopt(){
                     </details> 
                     <details className="dropdown h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Attributes</summary>
-                        <ul className="py-4 shadow z-[1] text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
+                        <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
                             <label for="female">Female</label>
                             <input type="checkbox" id="female" name="female" />
@@ -40,7 +40,7 @@ export default function Adopt(){
                     </details>   
                     <details className="dropdown h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Age</summary>
-                        <ul className="py-4 shadow z-[1] text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
+                        <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
                             <label for="puppy">Puppy</label>
                             <input type="checkbox" id="puppy" name="puppy" />
@@ -61,7 +61,7 @@ export default function Adopt(){
                     </details> 
                     <details className="dropdown h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Breed</summary>
-                        <ul className="py-4 shadow z-[1] text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
+                        <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
                             <label for="female">Female</label>
                             <input type="checkbox" id="female" name="female" />
@@ -74,7 +74,7 @@ export default function Adopt(){
                     </details> 
                     <details className="dropdown h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Size</summary>
-                        <ul className="py-4 shadow z-[1] text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
+                        <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
                             <label for="small">Small (1 - 19lb)</label>
                             <input type="checkbox" id="small" name="small" />
@@ -91,7 +91,7 @@ export default function Adopt(){
                     </details> 
                     <details className="dropdown h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Sort</summary>
-                        <ul className="py-4 shadow z-[1] text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
+                        <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
                             <label for="longest">Longest Stay</label>
                             <input type="checkbox" id="longest" name="longest" />
