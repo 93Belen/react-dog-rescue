@@ -14,7 +14,6 @@ import Contact from './components/pages/Contact';
 import Donate from './components/pages/Donate';
 import Events from './components/pages/Events';
 import Adopt from './components/pages/Adopt';
-import Application from './components/pages/Application';
 
 const router = createBrowserRouter([
   {
@@ -52,10 +51,6 @@ const router = createBrowserRouter([
   {
     path: 'adopt',
     element: <Adopt/>
-  },
-  {
-    path: 'application',
-    element: <Application/>
   }
 ]);
 
