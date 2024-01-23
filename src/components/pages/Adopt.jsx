@@ -1,3 +1,4 @@
+import ApplicationModal from "../ApplicationModal";
 import DogCard from "../DogCard";
 import Layout from "../Layout";
 
