@@ -2,7 +2,7 @@ export default function ApplicationModal(props){
     const dog = props.dog;
     return(
         <section className='text-white'>
-            <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+            <dialog id="my_modal_adoption" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box bg-blue h-fit w-full flex flex-col gap-4">
                 <h3 className="font-bold text-lg">Adoption Application</h3>
                 <form className='flex flex-col gap-4 w-full p-5'>

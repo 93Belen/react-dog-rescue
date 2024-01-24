@@ -1,4 +1,4 @@
-export default function DonateModal(props){
+export default function DonationModal(props){
     const typeDonation = props.typeDonation;
     return(
         <section className='text-white'>
@@ -8,6 +8,13 @@ export default function DonateModal(props){
                 <form className='flex flex-col gap-4 w-full p-5'>
                     <input required placeholder='Full Name' className='bg-white text-black p-2 rounded-md' type="text" />
                     <input required placeholder='Email' className='bg-white text-black p-2 rounded-md' type="email" />
+                    <select required placeholder='Dog' className='bg-white text-black p-2 rounded-md appearance-none' >
+                    <option selected >{typeDonation}</option>
+                    <option value="option 1">option 1</option>
+                    <option value="option 1">option 2</option>
+                    <option value="option 1">option 3</option>
+                    <option value="option 1">option 4</option>
+                    </select>
                     <input required placeholder='Street Address' className='bg-white text-black p-2 rounded-md' type="text" />
                     <input required placeholder='City' className='bg-white text-black p-2 rounded-md' type="text" />
                     <input required placeholder='Postal Code' className='bg-white text-black p-2 rounded-md' type="text" />
