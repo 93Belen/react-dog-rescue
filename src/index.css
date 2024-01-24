@@ -38,3 +38,8 @@ p {
   summary::-webkit-details-marker {
     display: none;
 }
+
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

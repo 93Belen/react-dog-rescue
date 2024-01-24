@@ -12,7 +12,7 @@ export default function DonationModal(){
                     <option selected >Monthly Donation</option>
                     <option value="option 1">One Time Donation</option>
                     </select>
-                    <input type="number" id="donationAmount" min={5} className='bg-white text-black p-2 rounded-md' name="donationAmount" step="0.01" placeholder="0.00" required/>
+                    <input type="number" id="donationAmount" min={5} className='bg-white text-black p-2 rounded-md' name="donationAmount" step="0.01" placeholder="5.00$" required/>
                     <input required placeholder='Street Address' className='bg-white text-black p-2 rounded-md' type="text" />
                     <input required placeholder='City' className='bg-white text-black p-2 rounded-md' type="text" />
                     <input required placeholder='Postal Code' className='bg-white text-black p-2 rounded-md' type="text" />
