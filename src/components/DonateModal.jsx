@@ -15,11 +15,15 @@ export default function DonationModal(props){
                     <option value="option 1">option 3</option>
                     <option value="option 1">option 4</option>
                     </select>
+                    <input type="number" id="donationAmount" min={5} className='bg-white text-black p-2 rounded-md' name="donationAmount" step="0.01" placeholder="0.00" required/>
                     <input required placeholder='Street Address' className='bg-white text-black p-2 rounded-md' type="text" />
                     <input required placeholder='City' className='bg-white text-black p-2 rounded-md' type="text" />
                     <input required placeholder='Postal Code' className='bg-white text-black p-2 rounded-md' type="text" />
-                    <input required placeholder='Phone Number 1' className='bg-white text-black p-2 rounded-md' type="tel" />
-                    <input placeholder='Phone Number 2' className='bg-white text-black p-2 rounded-md' type="tel" />
+                    <input required placeholder='State' className='bg-white text-black p-2 rounded-md' type="text" />
+                    <input id="ccn" type="tel" className='bg-white text-black p-2 rounded-md' inputmode="numeric" pattern="[0-9\s]{13,19}" 
+                    autocomplete="cc-number" maxlength="19" 
+                    placeholder="Card Number" required/>
+
                     <button type='submit'>Submit</button>
                 </form>
                 <div className="modal-action justify-start w-full">
