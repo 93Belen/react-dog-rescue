@@ -17,7 +17,7 @@ export default function Header(){
             <div className='flex justify-between w-full md:h-[140px] gap-20'>
                 {/* LOGO */}
                 <div>
-                    <img src='/logo-1.png'/>
+                    <img alt='logo' src='/logo-1.png'/>
                 </div>
                 {/* =============== MOBILE ICON ============================== */}
                 <div className='md:hidden w-[50px] h-[50px]'>

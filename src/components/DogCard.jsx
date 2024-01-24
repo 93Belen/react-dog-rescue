@@ -7,7 +7,6 @@ export default function DogCard(props){
     const age = props.age;
     const breed = props.breed;
     const size = props.size;
-    const attributes = props.attributes
 
     return (
         <section className='bg-yellow h-[350px] min-h-fit w-full border-2 m-auto max-w-[550px] border-black rounded-xl flex justify-center'>
