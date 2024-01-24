@@ -1,19 +1,16 @@
-export default function DonationModal(props){
-    const typeDonation = props.typeDonation;
+export default function DonationModal(){
+
     return(
         <section className='text-white'>
             <dialog id="my_modal_donation" className="modal modal-bottom sm:modal-middle">
             <div className="modal-box bg-blue h-fit w-full flex flex-col gap-4">
-                <h3 className="font-bold text-lg">{typeDonation}</h3>
+                <h3 className="font-bold text-lg">Monthly Donation</h3>
                 <form className='flex flex-col gap-4 w-full p-5'>
                     <input required placeholder='Full Name' className='bg-white text-black p-2 rounded-md' type="text" />
                     <input required placeholder='Email' className='bg-white text-black p-2 rounded-md' type="email" />
                     <select required placeholder='Dog' className='bg-white text-black p-2 rounded-md appearance-none' >
-                    <option selected >{typeDonation}</option>
-                    <option value="option 1">option 1</option>
-                    <option value="option 1">option 2</option>
-                    <option value="option 1">option 3</option>
-                    <option value="option 1">option 4</option>
+                    <option selected >Monthly Donation</option>
+                    <option value="option 1">One Time Donation</option>
                     </select>
                     <input type="number" id="donationAmount" min={5} className='bg-white text-black p-2 rounded-md' name="donationAmount" step="0.01" placeholder="0.00" required/>
                     <input required placeholder='Street Address' className='bg-white text-black p-2 rounded-md' type="text" />
