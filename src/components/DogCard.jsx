@@ -2,6 +2,7 @@ import AdoptButton from "./AdoptButton";
 import Chip from "./Chip";
 import ApplicationModal from "./ApplicationModal";
 import DogModal from "./DogModal";
+import ReadMoreButton from "./ReadMoreButton";
 
 export default function DogCard(props){
     const sex = props.sex;
@@ -21,13 +22,14 @@ export default function DogCard(props){
                     <div className='hidden md:flex flex-wrap flex-row gap-1'>
                         <Chip text={sex} />
                         <Chip text={size} />
-                        <Chip text='Good with kids' />
                         <Chip text={breed} />
                         <Chip text={age} />
-                        <Chip text='Special Needs' />
                     </div>
                     </div>
-                    <AdoptButton />
+                    <div className='flex flex-col gap-4'>
+                        <ReadMoreButton/>
+                        <AdoptButton />
+                    </div>     
                 </div>
             </div>
         </section>
