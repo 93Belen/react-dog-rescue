@@ -2,13 +2,11 @@ import './App.css';
 import AdoptButton from './components/AdoptButton';
 import ApplyButton from './components/ApplyButton';
 import DonateButton from './components/DonateButton';
-import Layout from './components/Layout';
 import { motion } from "framer-motion"
 
 
 function App() {
   return (
-    <Layout>
     <div className="App w-full text-black font-[300] h-fit text-[1.25rem]">
       <section className='flex box-border md:pb-40 flex-col gap-6 px-4 md:px-10 xl:px-32 py-12 pt-4 md:grid md:grid-cols-2 md:gap-y-10 md:gap-x-12 md:p-12 md:grid-rows-[10%_80%] h-fit'>
           <h1 className='text-[2.5rem] h-fit'>Lucky 13</h1>
@@ -137,7 +135,6 @@ function App() {
         </div>
       </section>
     </div>
-    </Layout>
   );
 }
 

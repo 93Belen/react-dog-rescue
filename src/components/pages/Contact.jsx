@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 export default function Contact(){
     return (
-        <Layout>
             <div className='text-black w-full'>
             <section className='xl:px-32 w-full p-4 md:p-12 py-12 pt-4 flex flex-col gap-6'>
                 <h1 className='text-[2rem] md:text-[2.5rem] h-fit'>Send us an email!</h1>
@@ -62,6 +61,5 @@ export default function Contact(){
                     </div>
                 </section>
             </div>
-        </Layout>
     )
 }

@@ -14,44 +14,55 @@ import Contact from './components/pages/Contact';
 import Donate from './components/pages/Donate';
 import Events from './components/pages/Events';
 import Adopt from './components/pages/Adopt';
+import Layout from './components/Layout';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App/>,
+    element: <Layout/>,
+    children: [
+      {
+        path: "/",
+        element: <App/>,
+      },
+      {
+        path: 'about',
+        element: <About/>
+      },
+      {
+        path: 'foster',
+        element: <Foster/>
+      },
+      {
+        path: 'volunteer',
+        element: <Volunteer/>
+      },
+      {
+        path: 'qualifications',
+        element: <Qualifications/>
+      },
+      {
+        path: 'contact',
+        element: <Contact/>
+      },
+      {
+        path: 'donate',
+        element: <Donate/>
+      },
+      {
+        path: 'events',
+        element: <Events/>
+      },
+      {
+        path: 'adopt',
+        element: <Adopt/>,
+        // children: [{
+        //   path: '/dog',
+    
+        // }]
+      }
+    ]
   },
-  {
-    path: 'about',
-    element: <About/>
-  },
-  {
-    path: 'foster',
-    element: <Foster/>
-  },
-  {
-    path: 'volunteer',
-    element: <Volunteer/>
-  },
-  {
-    path: 'qualifications',
-    element: <Qualifications/>
-  },
-  {
-    path: 'contact',
-    element: <Contact/>
-  },
-  {
-    path: 'donate',
-    element: <Donate/>
-  },
-  {
-    path: 'events',
-    element: <Events/>
-  },
-  {
-    path: 'adopt',
-    element: <Adopt/>
-  }
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

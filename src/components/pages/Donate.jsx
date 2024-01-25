@@ -3,7 +3,6 @@ import DonationCard from "../DonationCard";
 
 export default function Donate(){
     return (
-        <Layout>
             <div className='text-black'>
                 <section className='xl:px-32 w-full p-4 md:p-12 py-12 pt-4 flex flex-col gap-6'>
                     <h1 className='text-[2rem] md:text-[2.5rem] h-fit'>Donate</h1>
@@ -23,6 +22,5 @@ export default function Donate(){
                     <DonationCard title='Check/Cash' text='Donate via Cash App - $lucky13rescue' donateButton={false} />
                 </section>
             </div>
-        </Layout>
     )
 }

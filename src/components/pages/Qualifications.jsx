@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 export default function Qualifications(){
     return (
-        <Layout>
             <div className='text-black w-full'>
                 <section className='xl:px-32 w-full p-4 md:p-12 flex flex-col gap-6 md:grid grid-cols-[40%_60%]'>
                     <h1 className='text-[2.5rem] h-fit'>Adoption Qualifications</h1>
@@ -312,6 +311,5 @@ export default function Qualifications(){
                     </section>
                 </section>
             </div>
-        </Layout>
     )
 }

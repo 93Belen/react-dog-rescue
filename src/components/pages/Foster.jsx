@@ -4,7 +4,6 @@ import ApplyButton from "../ApplyButton";
 
 export default function Foster(){
     return (
-        <Layout>
             <div className='w-full text-black'>
                 <section className='text-white bg-gradient-to-b from-blue to-lightblue xl:px-32 w-full p-4 md:p-12 flex flex-col gap-6 md:grid grid-cols-[40%_60%]'>
                 <h1 className='text-[2.5rem] h-fit'>Foster</h1>
@@ -75,6 +74,5 @@ export default function Foster(){
                 </motion.p>
                 </section>
             </div>
-        </Layout>
     )
 }

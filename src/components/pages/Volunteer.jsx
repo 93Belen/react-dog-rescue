@@ -4,7 +4,6 @@ import DonateButton from "../DonateButton";
 
 export default function Volunteer(){
     return (
-        <Layout>
             <div className='text-black'>
                 <section className='xl:px-32 w-full p-4 md:p-12 py-12 pt-4 flex flex-col gap-6'>
                 <h1 className='text-[2rem] md:text-[2.5rem] h-fit'>Volunteer</h1>
@@ -90,6 +89,5 @@ export default function Volunteer(){
                     <DonateButton/>
             </section>
             </div>
-        </Layout>
     )
 }
