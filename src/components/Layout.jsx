@@ -2,7 +2,7 @@ import { Outlet } from "react-router";
 import Footer from "./Footer";
 import Header from "./Header";
 
-export default function Layout({children}){
+export default function Layout(){
     return (
         <div className='w-full min-h-screen bg-white h-fit overflow-x-hidden box-border'>
             <Header/>
