@@ -15,6 +15,7 @@ import Donate from './components/pages/Donate';
 import Events from './components/pages/Events';
 import Adopt from './components/pages/Adopt';
 import Layout from './components/Layout';
+import BoardOfDirectors from './components/pages/BoardOfDirectors';
 
 const router = createBrowserRouter([
   {
@@ -53,12 +54,16 @@ const router = createBrowserRouter([
         element: <Events/>
       },
       {
+        path:'directors',
+        element: <BoardOfDirectors/>
+      },
+      {
         path: 'adopt',
         element: <Adopt/>,
-        // children: [{
-        //   path: '/dog',
+        children: [{
+          path: ':dog',
     
-        // }]
+        }]
       }
     ]
   },
