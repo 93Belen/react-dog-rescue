@@ -25,11 +25,11 @@ export default function DogModal(props){
                 <a href="#item3" className="btn btn-xs">3</a> 
                 <a href="#item4" className="btn btn-xs">4</a>
                 </div>
-            <div className="modal-action justify-start w-full">
-            <form method="dialog w-full flex flex-col gap-4">
-                <button className="text-white">Close</button>
-            </form>
-            </div>
+                <div className="modal-action justify-start w-full">
+                <form method="dialog w-full flex flex-col gap-4">
+                    <button className="text-white">Close</button>
+                </form>
+                </div>
         </div>
         </dialog>
     </section>
