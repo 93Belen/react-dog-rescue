@@ -39,7 +39,7 @@ export default function Qualifications(){
                         className='w-full col-start-2 row-start-1 row-span-3 rounded-lg md:w-auto md:h-full md:mx-auto object-cover object-[35%]'
                         src="/troy-6.png" alt="" />
                 </section>
-                <section className='bg-gradient-to-b from-blue to-lightblue text-white px-6 py-12 text-center flex flex-col items-center gap-6 md:gap-12'>
+                <section id='faqs' className='bg-gradient-to-b from-blue to-lightblue text-white px-6 py-12 text-center flex flex-col items-center gap-6 md:gap-12'>
                     <p
                     className='md: max-w-[1050px]'>
                     We are unable to approve applicants: <br/>

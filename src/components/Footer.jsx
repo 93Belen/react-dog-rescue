@@ -16,13 +16,12 @@ export default function Footer(){
                     NAVIGATION
                 </div>
                 <div className="collapse-content md:pl-2 md:w-full md:justify-between pl-0 flex flex-col gap-2 text-[1rem] font-[300] md:grid md:grid-rows-4 md:grid-cols-2"> 
-                <NavLink to='/'>Foster</NavLink>
-                <NavLink to='/'>Volunteer</NavLink>
-                <NavLink to='/'>Dogs</NavLink>
-                <NavLink to='/'>Application</NavLink>
-                <NavLink to='/'>FAQs</NavLink>
+                <NavLink to='/foster'>Foster</NavLink>
+                <NavLink to='/volunteer'>Volunteer</NavLink>
+                <NavLink to='/adopt'>Dogs</NavLink>
+                <NavLink to='/qualifications/#faqs'>FAQs</NavLink>
                 <NavLink to='/'>Shop</NavLink>
-                <NavLink to='/'>Events</NavLink>
+                <NavLink to='/events'>Events</NavLink>
                 <NavLink to='/'>Board of Directors</NavLink>
                 </div>
             </section>
