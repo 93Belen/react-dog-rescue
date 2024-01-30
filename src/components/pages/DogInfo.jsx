@@ -9,7 +9,7 @@ export default function DogInfo(props){
     const size = props.size
     return(
         <section className='text-black w-full h-fit'>
-            <section className='px-6 py-12 flex flex-col items-center gap-6 md:gap-12'>
+            <section className='px-6 py-12 flex flex-col gap-6 md:gap-12'>
             <h3 className="font-bold text-[2rem]">{'Dog\'s name'}</h3>
             <div className='mx-auto'>
             <div className="carousel w-auto md:w-[400px] m-auto max-h-[35vh]">
@@ -34,7 +34,7 @@ export default function DogInfo(props){
                 </div>
             </div>
             
-                <div className='flex justify-between md:w-[75%]'>
+                <div className='flex justify-between md:w-[65%]'>
                     <Chip text={'Female'} />
                     <Chip text={'Big'} />
                     <Chip text={'Pit Mix'} />
