@@ -17,6 +17,7 @@ import Adopt from './components/pages/Adopt';
 import Layout from './components/Layout';
 import BoardOfDirectors from './components/pages/BoardOfDirectors';
 import Dog from './components/DogModal';
+import DogInfo from './components/pages/DogInfo';
 
 const router = createBrowserRouter([
   {
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
       {
         path: 'adopt',
         element: <Adopt/>
+      },
+      {
+        path: 'dog-info',
+        element: <DogInfo/>
       }
     ]
   },
