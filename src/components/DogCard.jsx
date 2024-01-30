@@ -27,7 +27,7 @@ export default function DogCard(props){
                     </div>
                     </div>
                     <div className='flex flex-col gap-4'>
-                        {/* <ReadMoreButton/> */}
+                        <ReadMoreButton/>
                         <AdoptButton />
                     </div>     
                 </div>
