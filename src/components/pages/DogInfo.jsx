@@ -8,8 +8,8 @@ export default function DogInfo(props){
     const breed = props.breed
     const size = props.size
     return(
-        <section className='text-black'>
-        <div className="w-screen ">
+        <section className='text-black w-full h-fit'>
+            <section className='px-6 py-12 flex flex-col items-center gap-6 md:gap-12'>
             <h3 className="font-bold text-[2rem]">{'Dog\'s name'}</h3>
             <div className='mx-auto'>
             <div className="carousel w-auto md:w-[400px] m-auto max-h-[35vh]">
@@ -59,7 +59,8 @@ export default function DogInfo(props){
                     https://linktr.ee/lucky13rescue.
                     </p>
                 </div>
-                <section id='faqs' className='bg-gradient-to-b from-blue to-lightblue text-white px-6 py-12 text-center flex flex-col items-center gap-6 md:gap-12'>
+            </section>
+            <section id='faqs' className='bg-gradient-to-b from-blue to-lightblue text-white px-6 py-12 text-center flex flex-col items-center gap-6 md:gap-12'>
                     <h3 className='text-[2rem]'>Adoption Process</h3>
                     <motion.ol>
                         <motion.li
@@ -97,12 +98,6 @@ export default function DogInfo(props){
                     LIST. We will be replying by email. 
                     </p>
                 </section>
-                <div className="modal-action justify-start w-full">
-                <form method="dialog w-full flex flex-col gap-4">
-                    <button className="">Close</button>
-                </form>
-                </div>
-        </div>
     </section>
     )
 }
