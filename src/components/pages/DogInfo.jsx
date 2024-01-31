@@ -13,22 +13,22 @@ export default function DogInfo(props){
     const size = props.size
     return(
         <section className='text-black w-full h-fit'>
-            <section className='xl:px-32 w-full p-4 md:p-12 py-12 pt-4 flex flex-col gap-6 md:gap-12'>
+            <section className='xl:px-32 w-full p-4 md:p-12 md:py-0 py-12 flex flex-col gap-6 md:gap-12'>
             <Link className='text-[3rem]' to='/adopt'><FaArrowLeft /></Link>
             <h1 className="text-[2rem] md:text-[2.5rem] h-fit">{'Dog\'s name'}</h1>
             <div className='mx-auto'>
-            <div className="carousel w-auto md:w-[400px] m-auto max-h-[35vh]">
-                <div id="item1" className="carousel-item w-full">
-                    <img src="./troy.png" className="w-full" />
+            <div className="carousel w-auto md:w-[550px] m-auto max-h-[35vh]">
+                <div id="item1" className="carousel-item w-full rounded-lg">
+                    <img src="./troy.png" className="w-full rounded-lg" />
                 </div> 
-                <div id="item2" className="carousel-item w-full">
-                    <img src="./troy-4.png" className="w-full" />
+                <div id="item2" className="carousel-item w-full rounded-lg">
+                    <img src="./troy-4.png" className="w-full rounded-lg" />
                 </div> 
-                <div id="item3" className="carousel-item w-full">
-                    <img src="./troy-2.png" className="w-full" />
+                <div id="item3" className="carousel-item w-full rounded-lg">
+                    <img src="./troy-2.png" className="w-full rounded-lg" />
                 </div> 
-                <div id="item4" className="carousel-item w-full">
-                    <img src="./troy-3.png" className="w-full" />
+                <div id="item4" className="carousel-item w-full rounded-lg">
+                    <img src="./troy-3.png" className="w-full rounded-lg" />
                 </div>
                 </div> 
                 <div className="flex justify-center w-full py-2 gap-2">
