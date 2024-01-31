@@ -42,7 +42,41 @@ export default function DogInfo(props){
                     <Chip text={'Pit Mix'} />
                     <Chip text={'Young'} />
                 </div>
-                <div>
+                <div className='flex flex-col gap-12'>
+                    <motion.ul className='flex flex-col gap-4'>
+                        <motion.li
+                        initial={{x: -250}}
+                        whileInView={{ x: 0}}
+                        transition={{duration: 0.5, delay: 0}}
+                        viewport={{ once: true }}
+                        >
+                        <span className='font-bold'>ANIMAL ID:</span> LUCK-A-860
+                        </motion.li>
+                        <motion.li
+                        initial={{x: -250}}
+                        whileInView={{ x: 0}}
+                        transition={{duration: 0.5, delay: 0.1}}
+                        viewport={{ once: true }}
+                        >
+                        <span className='font-bold'>BREED:</span> Terrier, American Pit Bull
+                        </motion.li>
+                        <motion.li
+                        initial={{x: -250}}
+                        whileInView={{ x: 0}}
+                        transition={{duration: 0.5, delay: 0.2}}
+                        viewport={{ once: true }}
+                        >
+                        <span className='font-bold'>AGE:</span> 3Y/8M/1W
+                        </motion.li>
+                        <motion.li
+                        initial={{x: -250}}
+                        whileInView={{ x: 0}}
+                        transition={{duration: 0.5, delay: 0.3}}
+                        viewport={{ once: true }}
+                        >
+                        <span className='font-bold'>ADOPTION FEE:</span> $0 
+                        </motion.li>
+                    </motion.ul>
                     <p>
                     Meet Brie! Hi guys, I'm a super sweet and cuddly pittie. 
                     I came to Lucky 13 Rescue pretty sad after my Dad passed away, 
