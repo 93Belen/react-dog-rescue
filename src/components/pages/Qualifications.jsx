@@ -40,42 +40,6 @@ export default function Qualifications(){
                         src="/troy-6.png" alt="" />
                 </section>
                 <section id='faqs' className='bg-gradient-to-b from-blue to-lightblue text-white px-6 py-12 text-center flex flex-col items-center gap-6 md:gap-12'>
-                    <h3 className='text-[2rem]'>Adoption Process</h3>
-                    <motion.ol>
-                        <motion.li
-                        initial={{x: 250}}
-                        whileInView={{ x: 0}}
-                        transition={{duration: 0.5, delay: 0}}
-                        viewport={{ once: true }}
-                        >1. Fill out application.</motion.li>
-                        <motion.li
-                        initial={{x: 250}}
-                        whileInView={{ x: 0}}
-                        transition={{duration: 0.5, delay: 0.1}}
-                        viewport={{ once: true }}
-                        >2. Meet and greet scheduled once approved.</motion.li>
-                        <motion.li
-                        initial={{x: 250}}
-                        whileInView={{ x: 0}}
-                        transition={{duration: 0.5, delay: 0.2}}
-                        viewport={{ once: true }}
-                        >3. If the meet and greet goes well, you may possibly be able to adopt at that time. </motion.li>
-                        <motion.li
-                        initial={{x: 250}}
-                        whileInView={{ x: 0}}
-                        transition={{duration: 0.5, delay: 0.3}}
-                        viewport={{ once: true }}
-                        >4. Home check required.</motion.li>
-                    </motion.ol>
-                    <p>
-                    Once your application is approved, we will contact you to answer any 
-                    questions you may have and to set up a meet & greet. This process can 
-                    take several hours to several days, as we are entirely volunteer based. ​ 
-                    There are many times we get multiple applicants for a dog. In those instances, 
-                    we contact people in the order applications are received. We will do our best
-                    to notify you if this occurs. PLEASE ADD ADOPTIONS@LUCKY13RESCUE.ORG TO YOUR 
-                    LIST. We will be replying by email. 
-                    </p>
                     <p
                     className='md: max-w-[1050px]'>
                     We are unable to approve applicants: <br/>
