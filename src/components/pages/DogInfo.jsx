@@ -1,5 +1,7 @@
 import Chip from "../Chip"
 import { motion } from "framer-motion"
+import AdoptButton from '../AdoptButton'
+import DonateButton from '../DonateButton'
 
 export default function DogInfo(props){
     const dog = props.dog
@@ -9,8 +11,8 @@ export default function DogInfo(props){
     const size = props.size
     return(
         <section className='text-black w-full h-fit'>
-            <section className='px-6 py-12 flex flex-col gap-6 md:gap-12'>
-            <h3 className="font-bold text-[2rem]">{'Dog\'s name'}</h3>
+            <section className='xl:px-32 w-full p-4 md:p-12 py-12 pt-4 flex flex-col gap-6 md:gap-12'>
+            <h1 className="text-[2rem] md:text-[2.5rem] h-fit">{'Dog\'s name'}</h1>
             <div className='mx-auto'>
             <div className="carousel w-auto md:w-[400px] m-auto max-h-[35vh]">
                 <div id="item1" className="carousel-item w-full">
@@ -34,7 +36,7 @@ export default function DogInfo(props){
                 </div>
             </div>
             
-                <div className='flex justify-between md:w-[65%]'>
+                <div className='flex justify-between md:max-w-[600px]'>
                     <Chip text={'Female'} />
                     <Chip text={'Big'} />
                     <Chip text={'Pit Mix'} />
@@ -58,6 +60,10 @@ export default function DogInfo(props){
                     https://www.shelterluv.com/matchme/adopt/LUCK/Dog or
                     https://linktr.ee/lucky13rescue.
                     </p>
+                </div>
+                <div className='flex justify-between md:max-w-[500px]'>
+                    <AdoptButton />
+                    <DonateButton/>
                 </div>
             </section>
             <section id='faqs' className='bg-gradient-to-b from-blue to-lightblue text-white px-6 py-12 text-center flex flex-col items-center gap-6 md:gap-12'>
