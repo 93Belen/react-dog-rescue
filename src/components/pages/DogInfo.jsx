@@ -39,7 +39,7 @@ export default function DogInfo(props){
                 </div>
             </div>
             
-                <div className='flex justify-between md:max-w-[600px]'>
+                <div className='flex md:justify-between md:max-w-[600px] flex-wrap gap-2'>
                     <Chip text={'Female'} />
                     <Chip text={'Big'} />
                     <Chip text={'Pit Mix'} />
@@ -98,7 +98,7 @@ export default function DogInfo(props){
                     https://linktr.ee/lucky13rescue.
                     </p>
                 </div>
-                <div className='flex justify-between md:max-w-[500px]'>
+                <div className='flex justify-between md:max-w-[500px] gap-4 flex-wrap'>
                     <AdoptButton />
                     <DonateButton/>
                 </div>
