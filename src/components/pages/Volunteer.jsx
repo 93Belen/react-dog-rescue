@@ -1,16 +1,7 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import DonateButton from "../DonateButton";
 
 export default function Volunteer(){
-    const [sex, setSex] = useState();
-    const [age, setAge] = useState();
-    const [breed, setBreed] = useState();
-    const [sze, setSize] = useState();
-    const [sort, setSort] = useState();
-
-
-
 
     return (
             <div className='text-black'>

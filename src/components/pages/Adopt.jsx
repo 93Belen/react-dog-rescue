@@ -1,6 +1,13 @@
 import DogCard from "../DogCard";
+import { useState } from "react";
 
 export default function Adopt(){
+    const [sex, setSex] = useState();
+    const [age, setAge] = useState();
+    const [breed, setBreed] = useState();
+    const [sze, setSize] = useState();
+    const [sort, setSort] = useState();
+    
     return (
             <div className='text-black'>
                 <section className='xl:px-32 w-full p-4 md:p-12 py-12 pt-4 flex flex-col gap-6'>
