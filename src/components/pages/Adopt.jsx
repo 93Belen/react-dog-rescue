@@ -1,13 +1,37 @@
 import DogCard from "../DogCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Adopt(){
     const [sex, setSex] = useState();
     const [age, setAge] = useState();
     const [breed, setBreed] = useState();
-    const [sze, setSize] = useState();
+    const [size, setSize] = useState();
     const [sort, setSort] = useState();
-    
+
+    useEffect(() => {
+
+        // SEX
+        const female = document.getElementById('female').checked
+        const male = document.getElementById('male').checked
+
+        // AGE
+        const puppy = document.getElementById('puppy').checked
+        const young = document.getElementById('young').checked
+        const adult = document.getElementById('adult').checked
+        const senior = document.getElementById('senior').checked
+
+        // SIZE
+        const small = document.getElementById('small').checked
+        const medium = document.getElementById('medium').checked
+        const large = document.getElementById('large').checked
+       
+        // STAY
+        const longest = document.getElementById('longest').checked
+        const shortest = document.getElementById('shortest').checked
+
+    },[sex, breed, age, size, sort])
+
+
     return (
             <div className='text-black'>
                 <section className='xl:px-32 w-full p-4 md:p-12 py-12 pt-4 flex flex-col gap-6'>
@@ -40,7 +64,7 @@ export default function Adopt(){
                         </div></li>
                         <li><div className='flex justify-between items-center'>
                             <label for="young">Young Adult</label>
-                            <input type="checkbox" id="yound" name="young" />
+                            <input type="checkbox" id="young" name="young" />
                         </div></li>
                         <li><div className='flex justify-between items-center'>
                             <label for="adult">Adult</label>
