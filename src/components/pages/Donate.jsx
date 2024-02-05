@@ -1,4 +1,3 @@
-import Layout from "../Layout";
 import DonationCard from "../DonationCard";
 
 export default function Donate(){

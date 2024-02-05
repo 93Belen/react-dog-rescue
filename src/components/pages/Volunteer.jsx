@@ -1,4 +1,3 @@
-import Layout from "../Layout";
 import { motion } from "framer-motion";
 import DonateButton from "../DonateButton";
 

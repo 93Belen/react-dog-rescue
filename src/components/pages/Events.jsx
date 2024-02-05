@@ -1,4 +1,3 @@
-import Layout from "../Layout";
 import EventCard from "../EventCard";
 
 export default function Events(){

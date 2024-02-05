@@ -1,5 +1,4 @@
 import DogCard from "../DogCard";
-import Layout from "../Layout";
 
 export default function Adopt(){
     return (
