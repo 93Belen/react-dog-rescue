@@ -16,11 +16,22 @@ export default function Adopt(){
     const dogObj = OrganizeDogInfo(DogInfoArr);
     console.log(dogObj)
 
-    useEffect(() => {
+  const onChange = () => {
         // SEX
         const female = document.getElementById('female').checked
         const male = document.getElementById('male').checked
-        
+        if(female) {
+            setSex('Female')
+        }
+        if(male){
+            setSex('Male')
+        }
+        if(!female && !male) {
+            setSex(null)
+        }
+        if(female && male) {
+            setSex(null)
+        }
 
         // AGE
         const puppy = document.getElementById('puppy').checked
@@ -35,8 +46,9 @@ export default function Adopt(){
        
         
 
-    })
+    }
 
+    console.log(sex)
 
     return (
             <div className='text-black'>
@@ -47,7 +59,7 @@ export default function Adopt(){
                 id="shop-mobile-nav"
                 className="w-full px-4 md:px-12 flex box-content overflow-x-auto flex lg:justify-center no-scrollbar"
                 >
-                    <header className='flex justify-around w-fit h-fit max-w-[1400px] min-w-[900px] pr-20 gap-4 md:gap-2 overflow-x-scroll no-scrollbar flex-nowrap'>
+                    <header onChange={onChange} className='flex justify-around w-fit h-fit max-w-[1400px] min-w-[900px] pr-20 gap-4 md:gap-2 overflow-x-scroll no-scrollbar flex-nowrap'>
                     <details className="h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Sex</summary>
                         <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
