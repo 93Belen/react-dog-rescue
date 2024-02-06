@@ -4,20 +4,23 @@ import { DogInfoArr } from "../../DogInfo/DogInfoArr";
 import OrganizeDogInfo from "../../DogInfo/OrganizeDogInfo";
 
 export default function Adopt(){
+    // currently working on
     const [sex, setSex] = useState();
     const [age, setAge] = useState();
-    const [breed, setBreed] = useState();
     const [size, setSize] = useState();
+     
+    // future functionality
+    const [breed, setBreed] = useState();
     const [sort, setSort] = useState();
 
     const dogObj = OrganizeDogInfo(DogInfoArr);
     console.log(dogObj)
 
     useEffect(() => {
-
         // SEX
         const female = document.getElementById('female').checked
         const male = document.getElementById('male').checked
+        
 
         // AGE
         const puppy = document.getElementById('puppy').checked
@@ -30,11 +33,9 @@ export default function Adopt(){
         const medium = document.getElementById('medium').checked
         const large = document.getElementById('large').checked
        
-        // STAY
-        const longest = document.getElementById('longest').checked
-        const shortest = document.getElementById('shortest').checked
+        
 
-    },[sex, breed, age, size, sort])
+    })
 
 
     return (
