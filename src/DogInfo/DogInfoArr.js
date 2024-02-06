@@ -3,7 +3,7 @@ export const DogInfoArr = [
         sex: 'Female',
         age: 'Puppy',
         Breed: 'Pit Mix',
-        size: 'Small'
+        size: 'Large'
     },
     {
         sex: 'Male',
@@ -15,30 +15,30 @@ export const DogInfoArr = [
         sex: 'Female',
         age: 'Young',
         Breed: 'Lab Mix',
-        size: 'Small'
+        size: 'Medium'
     },
     {
         sex: 'Male',
         age: 'Young',
         Breed: 'Pit Mix',
-        size: 'Small'
+        size: 'Medium'
     },
     {
         sex: 'Female',
         age: 'Adult',
         Breed: 'Lab Mix',
-        size: 'Small'
+        size: 'Medium'
     },
     {
         sex: 'Male',
         age: 'Adult',
         Breed: 'Rottweiler',
-        size: 'Small'
+        size: 'Large'
     },
     {
         sex: 'Female',
         age: 'Senior',
         Breed: 'Pit Mix',
-        size: 'Small'
+        size: 'Medium'
     }
 ]

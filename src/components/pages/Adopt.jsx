@@ -1,6 +1,7 @@
 import DogCard from "../DogCard";
 import { useEffect, useState } from "react";
 import { DogInfoArr } from "../../DogInfo/DogInfoArr";
+import OrganizeDogInfo from "../../DogInfo/OrganizeDogInfo";
 
 export default function Adopt(){
     const [sex, setSex] = useState();
@@ -8,6 +9,9 @@ export default function Adopt(){
     const [breed, setBreed] = useState();
     const [size, setSize] = useState();
     const [sort, setSort] = useState();
+
+    const dogObj = OrganizeDogInfo(DogInfoArr);
+    console.log(dogObj)
 
     useEffect(() => {
 
