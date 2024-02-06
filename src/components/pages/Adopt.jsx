@@ -82,8 +82,6 @@ export default function Adopt(){
 
     }
 
-    console.log(sex)
-
     return (
             <div className='text-black'>
                 <section className='xl:px-32 w-full p-4 md:p-12 py-12 pt-4 flex flex-col gap-6'>
