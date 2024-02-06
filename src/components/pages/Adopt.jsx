@@ -1,5 +1,6 @@
 import DogCard from "../DogCard";
 import { useEffect, useState } from "react";
+import { DogInfoArr } from "../../DogInfo/DogInfoArr";
 
 export default function Adopt(){
     const [sex, setSex] = useState();
