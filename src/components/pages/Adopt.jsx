@@ -39,12 +39,46 @@ export default function Adopt(){
         const adult = document.getElementById('adult').checked
         const senior = document.getElementById('senior').checked
 
+        if(puppy) {
+            setAge('Puppy')
+        }
+        if(young) {
+            setAge('Young')
+        }
+        if(adult) {
+            setAge('Adult')
+        }
+        if(senior) {
+            setAge('Senior')
+        }
+        if(puppy && young && adult && senior){
+            setAge(null)
+        }
+        if(!puppy && !young && !adult && !senior){
+            setAge(null)
+        }
+        
+
         // SIZE
         const small = document.getElementById('small').checked
         const medium = document.getElementById('medium').checked
         const large = document.getElementById('large').checked
        
-        
+        if(small) {
+            setSize('Small')
+        }
+        if(medium) {
+            setSize('Medium')
+        }
+        if(large) {
+            setSize('Large')
+        }
+        if(small && medium && large){
+            setSize(null)
+        }
+        if(!small && !medium && !large){
+            setSize(null)
+        }
 
     }
 
