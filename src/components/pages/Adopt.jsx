@@ -94,6 +94,10 @@ export default function Adopt(){
         }
         if(sex === 'Female'){
             setResults(dogObj.female)
+            if(age === "Puppy"){
+                const puppyFemale = dogObj.female.filter(dog => dogObj.puppy.includes(dog))
+                setResults(puppyFemale)
+            }
         }
         if(sex === 'Male'){
             setResults(dogObj.male)
