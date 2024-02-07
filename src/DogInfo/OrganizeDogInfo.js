@@ -237,15 +237,52 @@ export default function OrganizeDogInfo(arr){
         // CHECK AGE
         if(dog.age === "Puppy"){
             obj.puppy.all.push(dog)
+            // CHECK AGE AND SIZE
+            if(dog.size === 'Small'){
+                obj.puppy.small.push(dog)
+            }
+            else if(dog.size === 'Medium'){
+                obj.puppy.medium.push(dog)
+            }
+            else if(dog.size === 'Large'){
+                obj.puppy.large.push(dog)
+            }
         }
         else if(dog.age === 'Young'){
             obj.young.all.push(dog)
+            if(dog.size === 'Small'){
+                obj.young.small.push(dog)
+            }
+            else if(dog.size === 'Medium'){
+                obj.young.medium.push(dog)
+            }
+            else if(dog.size === 'Large'){
+                obj.young.large.push(dog)
+            }
         }
         else if(dog.age === 'Adult'){
             obj.adult.all.push(dog)
+            if(dog.size === 'Small'){
+                obj.adult.small.push(dog)
+            }
+            else if(dog.size === 'Medium'){
+                obj.adult.medium.push(dog)
+            }
+            else if(dog.size === 'Large'){
+                obj.adult.large.push(dog)
+            }
         }
         else if(dog.age === 'Senior'){
             obj.senior.all.push(dog)
+            if(dog.size === 'Small'){
+                obj.senior.small.push(dog)
+            }
+            else if(dog.size === 'Medium'){
+                obj.senior.medium.push(dog)
+            }
+            else if(dog.size === 'Large'){
+                obj.senior.large.push(dog)
+            }
         }
 
         // CHECK SIZE
