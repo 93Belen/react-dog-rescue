@@ -288,12 +288,31 @@ export default function OrganizeDogInfo(arr){
         // CHECK SIZE
         if(dog.size === "Small"){
             obj.small.all.push(dog)
+            // CHECK SIZE AND SEX
+            if(dog.sex === 'Female'){
+                obj.small.female.push(dog)
+            }
+            else if(dog.sex === 'Male'){
+                obj.small.male.push(dog)
+            }
         }
         else if(dog.size === 'Medium'){
             obj.medium.all.push(dog)
+            if(dog.sex === 'Female'){
+                obj.medium.female.push(dog)
+            }
+            else if(dog.sex === 'Male'){
+                obj.medium.male.push(dog)
+            }
         }
         else if(dog.size === 'Large'){
             obj.large.all.push(dog)
+            if(dog.sex === 'Female'){
+                obj.large.female.push(dog)
+            }
+            else if(dog.sex === 'Male'){
+                obj.large.male.push(dog)
+            }
         }
 
     });
