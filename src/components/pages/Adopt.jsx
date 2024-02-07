@@ -92,7 +92,12 @@ export default function Adopt(){
         if(!sex && !age && !size){
             setResults(DogInfoArr)
         }
-        console.log(results)
+        if(sex === 'Female'){
+            setResults(dogObj.female)
+        }
+        if(sex === 'Male'){
+            setResults(dogObj.male)
+        }
 
 
     }, [sex, age, size])
@@ -195,16 +200,6 @@ export default function Adopt(){
                         return <DogCard sex={dog.sex} size={dog.size} age={dog.age} breed={dog.breed} />
                     }))}
                     
-                    {/* <DogCard sex='Female' size='Small' breed='Pit Bull Mix' age='Young' />
-                    <DogCard sex='Male' size='Large' breed='Mix' age='Puppy' />
-                    <DogCard sex='Male' size='Large' breed='Rottwailer' age='Senior' />
-                    <DogCard sex='Female' size='Medium' breed='Chihuahua' age='Young' />
-                    <DogCard sex='Male' size='Small' breed='Bulldog' age='Young' />
-                    <DogCard sex='Female' size='Small' breed='Pit Bull Mix' age='Young' />
-                    <DogCard sex='Male' size='Large' breed='Mix' age='Puppy' />
-                    <DogCard sex='Male' size='Large' breed='Rottwailer' age='Senior' />
-                    <DogCard sex='Female' size='Medium' breed='Chihuahua' age='Young' />
-                    <DogCard sex='Male' size='Small' breed='Bulldog' age='Young' /> */}
                 </section>
             </div>
     )
