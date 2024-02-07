@@ -1,7 +1,7 @@
 
 export default function OrganizeDogInfo(arr){
     const obj = {
-        all: [], // ALL FUILTERS UNCHECKED
+        all: arr, // ALL FUILTERS UNCHECKED
         female: {
             all: [], // SEX CHECKED
             puppy: {

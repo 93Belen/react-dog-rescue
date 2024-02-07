@@ -89,36 +89,7 @@ export default function Adopt(){
 
 
     useEffect(() => {
-        // if(!sex && !age && !size){
-        //     setResults(DogInfoArr)
-        // }
-        // if(sex === 'Female'){
-        //     setResults(dogObj.female)
-        //     if(age === "Puppy"){
-        //         const puppyFemale = dogObj.female.filter(dog => dogObj.puppy.includes(dog))
-        //         setResults(puppyFemale)
-        //     }
-        //     if(age === "Young"){
-        //         const youngFemale = dogObj.female.filter(dog => dogObj.young.includes(dog))
-        //         setResults(youngFemale)
-        //     }
-        //     if(age === "Adult"){
-        //         const adultFemale = dogObj.female.filter(dog => dogObj.adult.includes(dog))
-        //         setResults(adultFemale)
-        //     }
-        //     if(age === "Senior"){
-        //         const seniorFemale = dogObj.female.filter(dog => dogObj.senior.includes(dog))
-        //         setResults(seniorFemale)
-        //     }
-        // }
-        // if(sex === 'Male'){
-        //     setResults(dogObj.male)
-        //     if(age === "Puppy"){
-        //         const puppyMale = dogObj.male.filter(dog => dogObj.puppy.includes(dog))
-        //         setResults(puppyMale)
-        //     }
-        // }
-
+      setResults(DogInfoArr)
 
     }, [sex, age, size])
 

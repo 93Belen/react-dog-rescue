@@ -40,5 +40,41 @@ export const DogInfoArr = [
         age: 'Senior',
         breed: 'Pit Mix',
         size: 'Medium'
+    },
+    {
+        sex: 'Female',
+        age: 'Adult',
+        breed: 'Chihuahua',
+        size: 'Small'
+    },
+    {
+        sex: 'Female',
+        age: 'Puppy',
+        breed: 'Lab Mix',
+        size: 'Medium'
+    },
+    {
+        sex: 'Male',
+        age: 'Senior',
+        breed: 'Lab Mix',
+        size: 'Small'
+    },
+    {
+        sex: 'Female',
+        age: 'Senior',
+        breed: 'Rottwailer',
+        size: 'Large'
+    },
+    {
+        sex: 'Female',
+        age: 'Young',
+        breed: 'Lab Mix',
+        size: 'Large'
+    },
+    {
+        sex: 'Female',
+        age: 'Young',
+        breed: 'Lab Mix',
+        size: 'Small'
     }
 ]
