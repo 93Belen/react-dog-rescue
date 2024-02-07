@@ -2,43 +2,43 @@ export const DogInfoArr = [
     {
         sex: 'Female',
         age: 'Puppy',
-        Breed: 'Pit Mix',
+        breed: 'Pit Mix',
         size: 'Large'
     },
     {
         sex: 'Male',
         age: 'Puppy',
-        Breed: 'Chihuahua',
+        breed: 'Chihuahua',
         size: 'Small'
     },
     {
         sex: 'Female',
         age: 'Young',
-        Breed: 'Lab Mix',
+        breed: 'Lab Mix',
         size: 'Medium'
     },
     {
         sex: 'Male',
         age: 'Young',
-        Breed: 'Pit Mix',
+        breed: 'Pit Mix',
         size: 'Medium'
     },
     {
         sex: 'Female',
         age: 'Adult',
-        Breed: 'Lab Mix',
+        breed: 'Lab Mix',
         size: 'Medium'
     },
     {
         sex: 'Male',
         age: 'Adult',
-        Breed: 'Rottweiler',
+        breed: 'Rottweiler',
         size: 'Large'
     },
     {
         sex: 'Female',
         age: 'Senior',
-        Breed: 'Pit Mix',
+        breed: 'Pit Mix',
         size: 'Medium'
     }
 ]

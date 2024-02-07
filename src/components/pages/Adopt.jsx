@@ -13,6 +13,10 @@ export default function Adopt(){
     const [breed, setBreed] = useState();
     const [sort, setSort] = useState();
 
+
+    // search result
+    const [results , setResults] = useState([]);
+
     const dogObj = OrganizeDogInfo(DogInfoArr);
     console.log(dogObj)
 
@@ -81,6 +85,21 @@ export default function Adopt(){
         }
 
     }
+
+
+
+    useEffect(() => {
+        if(!sex && !age && !size){
+            setResults(DogInfoArr)
+        }
+        console.log(results)
+
+
+    }, [sex, age, size])
+
+
+
+
 
     return (
             <div className='text-black'>
@@ -172,7 +191,11 @@ export default function Adopt(){
                     </header>
                 </div>
                 <section className='xl:px-32 w-full p-4 md:p-12 py-12 flex flex-col gap-6 lg:grid grid-cols-2 2xl:grid-cols-3'>
-                    <DogCard sex='Female' size='Small' breed='Pit Bull Mix' age='Young' />
+                    {(results.map(dog => {
+                        return <DogCard sex={dog.sex} size={dog.size} age={dog.age} breed={dog.breed} />
+                    }))}
+                    
+                    {/* <DogCard sex='Female' size='Small' breed='Pit Bull Mix' age='Young' />
                     <DogCard sex='Male' size='Large' breed='Mix' age='Puppy' />
                     <DogCard sex='Male' size='Large' breed='Rottwailer' age='Senior' />
                     <DogCard sex='Female' size='Medium' breed='Chihuahua' age='Young' />
@@ -181,7 +204,7 @@ export default function Adopt(){
                     <DogCard sex='Male' size='Large' breed='Mix' age='Puppy' />
                     <DogCard sex='Male' size='Large' breed='Rottwailer' age='Senior' />
                     <DogCard sex='Female' size='Medium' breed='Chihuahua' age='Young' />
-                    <DogCard sex='Male' size='Small' breed='Bulldog' age='Young' />
+                    <DogCard sex='Male' size='Small' breed='Bulldog' age='Young' /> */}
                 </section>
             </div>
     )
