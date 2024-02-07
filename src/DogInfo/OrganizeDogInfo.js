@@ -1,16 +1,106 @@
 
 export default function OrganizeDogInfo(arr){
     const obj = {
-        all: arr, // ALL FUILTERS UNCHECKED
-        female: [],
-        male: [],
-        puppy: [],
-        young: [],
-        adult: [],
-        senior: [],
-        small: [],
-        medium: [],
-        large: []
+        all: [], // ALL FUILTERS UNCHECKED
+        female: {
+            all: [], // SEX CHECKED
+            puppy: {
+                all: [], // SEX AND AGE CHECKED
+                small: [], // SEX AGE AND SIZE CHECKED
+                mediumd: [], 
+                big: [] 
+            },
+            young: {
+                all: [], // SEX AND AGE CHECKED
+                small: [], // SEX AGE AND SIZE CHECKED
+                mediumd: [], 
+                large: [] 
+            },
+            adult: {
+                all: [], // SEX AND AGE CHECKED
+                small: [], // SEX AGE AND SIZE CHECKED
+                mediumd: [], 
+                large: [] 
+            },
+            senior: {
+                all: [], // SEX AND AGE CHECKED
+                small: [], // SEX AGE AND SIZE CHECKED
+                mediumd: [], 
+                large: [] 
+            },
+            small: [], // SEX AND SIZE CHECKED
+            medium: [],
+            large: [] 
+        },
+        male: {
+            all: [], //SEX CHECKED
+            puppy: {
+                all: [], // SEX AND AGE CHECKED
+                small: [], // SEX AGE AND SIZE CHECKED
+                mediumd: [],
+                big: []
+            },
+            young: {
+                all: [], // SEX AND AGE CHECKED
+                small: [], // SEX AGE AND SIZE CHECKED
+                mediumd: [],
+                large: []
+            },
+            adult: {
+                all: [], // SEX AND AGE CHECKED
+                small: [], // SEX AGE AND SIZE CHECKED
+                mediumd: [],
+                large: []
+            },
+            senior: {
+                all: [], // SEX AND AGE CHECKED
+                small: [], // SEX AGE AND SIZE CHECKED
+                mediumd: [],
+                large: []
+            },
+            small: [], // SEX AND SIZE CHECKED
+            medium: [],
+            large: []
+        },
+        puppy: { 
+            all: [], // AGE CHECKED
+            small: [], // AGE AND SIZE CHECKED
+            medium: [],
+            large: []
+        },
+        young: {
+            all: [], // AGE CHECKED
+            small: [], // AGE AND SIZE CHECKED
+            medium: [],
+            large: []
+        },
+        adult: {
+            all: [], // AGE CHECKED
+            small: [], // AGE AND SIZE CHECKED
+            medium: [],
+            large: []
+        },
+        senior: {
+            all: [], // AGE CHECKED
+            small: [], // AGE AND SIZE CHECKED
+            medium: [],
+            large: []
+        },
+        small: {
+            all: [], // SIZE CHECKED
+            female: [], // SIZE AND SEX CHECKED
+            male: []
+        }, 
+        medium: {
+            all: [], // SIZE CHECKED
+            female: [], // SIZE AND SEX CHECKED
+            male: []
+        },
+        large: {
+            all: [], // SIZE CHECKED
+            female: [], // SIZE AND SEX CHECKED
+            male: []
+        }
     }
 
     // LOOP THROUGH ARRAY
@@ -18,35 +108,35 @@ export default function OrganizeDogInfo(arr){
 
         // CHECK SEX
         if(dog.sex === 'Female'){
-            obj.female.push(dog)
+            obj.female.all.push(dog)
         }
         else if(dog.sex === 'Male'){
-            obj.male.push(dog)
+            obj.male.all.push(dog)
         }
 
         // CHECK AGE
         if(dog.age === "Puppy"){
-            obj.puppy.push(dog)
+            obj.puppy.all.push(dog)
         }
         else if(dog.age === 'Young'){
-            obj.young.push(dog)
+            obj.young.all.push(dog)
         }
         else if(dog.age === 'Adult'){
-            obj.adult.push(dog)
+            obj.adult.all.push(dog)
         }
         else if(dog.age === 'Senior'){
-            obj.senior.push(dog)
+            obj.senior.all.push(dog)
         }
 
         // CHECK SIZE
         if(dog.size === "Small"){
-            obj.small.push(dog)
+            obj.small.all.push(dog)
         }
         else if(dog.size === 'Medium'){
-            obj.medium.push(dog)
+            obj.medium.all.push(dog)
         }
         else if(dog.size === 'Large'){
-            obj.large.push(dog)
+            obj.large.all.push(dog)
         }
 
     });
