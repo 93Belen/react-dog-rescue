@@ -25,10 +25,10 @@ export default function Adopt(){
         const female = document.getElementById('female').checked
         const male = document.getElementById('male').checked
         if(female) {
-            setSex('Female')
+            setSex('female')
         }
         if(male){
-            setSex('Male')
+            setSex('male')
         }
         if(!female && !male) {
             setSex(null)
@@ -44,16 +44,16 @@ export default function Adopt(){
         const senior = document.getElementById('senior').checked
 
         if(puppy) {
-            setAge('Puppy')
+            setAge('puppy')
         }
         if(young) {
-            setAge('Young')
+            setAge('young')
         }
         if(adult) {
-            setAge('Adult')
+            setAge('adult')
         }
         if(senior) {
-            setAge('Senior')
+            setAge('senior')
         }
         if(puppy && young && adult && senior){
             setAge(null)
@@ -69,13 +69,13 @@ export default function Adopt(){
         const large = document.getElementById('large').checked
        
         if(small) {
-            setSize('Small')
+            setSize('small')
         }
         if(medium) {
-            setSize('Medium')
+            setSize('medium')
         }
         if(large) {
-            setSize('Large')
+            setSize('large')
         }
         if(small && medium && large){
             setSize(null)
@@ -90,6 +90,15 @@ export default function Adopt(){
 
     useEffect(() => {
       setResults(DogInfoArr)
+      if(sex){
+          setResults(dogObj[`${sex}`].all)
+          if(age){
+              setResults(dogObj[`${sex}`][`${age}`].all)
+              if(size){
+                  setResults(dogObj[`${sex}`][`${age}`][`${size}`])
+              }
+          }
+      }
 
     }, [sex, age, size])
 
