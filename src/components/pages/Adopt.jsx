@@ -99,6 +99,18 @@ export default function Adopt(){
               }
           }
       }
+      if(age){
+        setResults(dogObj[`${age}`].all)
+        if(size){
+            setResults(dogObj[`${age}`][`${size}`])
+        }  
+        }
+        if(size){
+            setResults(dogObj[`${size}`].all)
+            if(sex){
+                setResults(dogObj[`${size}`][`${sex}`])
+            }
+        }
 
     }, [sex, age, size])
 
