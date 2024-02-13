@@ -130,15 +130,19 @@ export default function Adopt(){
                     <header onChange={onChange} className='flex justify-around w-fit h-fit max-w-[1400px] min-w-[900px] pr-20 gap-4 md:gap-2 overflow-x-scroll no-scrollbar flex-nowrap'>
                     <details className="h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Sex</summary>
-                        <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
-                        <li><div className='flex justify-between items-center'>
-                            <label for="female">Female</label>
-                            <input type="checkbox" id="female" name="female" />
-                        </div></li>
-                        <li><div className='flex justify-between items-center'>
-                            <label for="male">Male</label>
-                            <input type="checkbox" id="male" name="male" />
-                        </div></li>
+                        <ul className="py-4 shadow text-[1rem] font-[300] bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
+                            <li>
+                                <div className='flex justify-between items-center px-[0.1rem]'>
+                                    <label htmlFor="female">Female</label>
+                                    <input type="radio" id="female" name="gender" value="female" />
+                                </div>
+                            </li>
+                            <li>
+                                <div className='flex justify-between items-center px-[0.1rem]'>
+                                    <label htmlFor="male">Male</label>
+                                    <input type="radio" id="male" name="gender" value="male" />
+                                </div>
+                            </li>
                         </ul>
                     </details> 
                     <details className="dropdown h-full w-[20rem]">
@@ -146,7 +150,7 @@ export default function Adopt(){
                         <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
                             <label for="puppy">Puppy</label>
-                            <input type="checkbox" id="puppy" name="puppy" />
+                            <input  type="checkbox" id="puppy" name="puppy" />
                         </div></li>
                         <li><div className='flex justify-between items-center'>
                             <label for="young">Young Adult</label>
