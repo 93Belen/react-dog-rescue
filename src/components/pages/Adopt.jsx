@@ -197,18 +197,23 @@ export default function Adopt(){
                         </ul>
                     </details> 
                     <details className="dropdown h-full w-[20rem]">
-                        <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Sort</summary>
-                        <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
-                        <li><div className='flex justify-between items-center'>
-                            <label for="longest">Longest Stay</label>
-                            <input type="checkbox" id="longest" name="longest" />
-                        </div></li>
-                        <li><div className='flex justify-between items-center'>
-                            <label for="shortest">Shortest Stay</label>
-                            <input type="checkbox" id="shortest" name="shortest" />
-                        </div></li>
-                        </ul>
-                    </details> 
+                    <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Sort</summary>
+                    <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
+                        <li>
+                            <div className='flex justify-between items-center px-[0.1rem]'>
+                                <label htmlFor="longest">Longest Stay</label>
+                                <input type="radio" id="longest" name="sortOption" />
+                            </div>
+                        </li>
+                        <li>
+                            <div className='flex justify-between items-center px-[0.1rem]'>
+                                <label htmlFor="shortest">Shortest Stay</label>
+                                <input type="radio" id="shortest" name="sortOption" />
+                            </div>
+                        </li>
+                    </ul>
+                </details>
+
                     </header>
                 </div>
                 <section className='xl:px-32 w-full p-4 md:p-12 py-12 flex flex-col gap-6 lg:grid grid-cols-2 2xl:grid-cols-3'>
