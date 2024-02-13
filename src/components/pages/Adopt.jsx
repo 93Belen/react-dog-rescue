@@ -167,19 +167,6 @@ export default function Adopt(){
                         </ul>
                     </details> 
                     <details className="dropdown h-full w-[20rem]">
-                        <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Breed</summary>
-                        <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
-                        <li><div className='flex justify-between items-center'>
-                            <label for="female">Female</label>
-                            <input type="checkbox" id="female" name="female" />
-                        </div></li>
-                        <li><div className='flex justify-between items-center'>
-                            <label for="male">Male</label>
-                            <input type="checkbox" id="male" name="male" />
-                        </div></li>
-                        </ul>
-                    </details> 
-                    <details className="dropdown h-full w-[20rem]">
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Size</summary>
                         <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li><div className='flex justify-between items-center'>
@@ -193,6 +180,19 @@ export default function Adopt(){
                         <li><div className='flex justify-between items-center'>
                             <label for="large">Large (60 - 99lb)</label>
                             <input type="checkbox" id="large" name="large" />
+                        </div></li>
+                        </ul>
+                    </details> 
+                    <details className="dropdown h-full w-[20rem]">
+                        <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Breed</summary>
+                        <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
+                        <li><div className='flex justify-between items-center'>
+                            <label for="female">Female</label>
+                            <input type="checkbox" id="female" name="female" />
+                        </div></li>
+                        <li><div className='flex justify-between items-center'>
+                            <label for="male">Male</label>
+                            <input type="checkbox" id="male" name="male" />
                         </div></li>
                         </ul>
                     </details> 
