@@ -6,7 +6,7 @@ import OrganizeDogInfo from "../../DogInfo/OrganizeDogInfo";
 export default function Adopt(){
     // currently working on
     const [sex, setSex] = useState();
-    const [age, setAge] = useState();
+    const [age, setAge] = useState([]);
     const [size, setSize] = useState();
      
     // future functionality
@@ -22,7 +22,6 @@ export default function Adopt(){
         // Check if the current dog's breed is the first occurrence in the array
         return arr.findIndex(d => d.breed === dog.breed) === index;
     }).map(dog => dog.breed);
-    console.log(dogObj)
 
   const onChange = () => {
         // SEX
@@ -48,7 +47,7 @@ export default function Adopt(){
         const senior = document.getElementById('senior').checked
 
         if(puppy) {
-            setAge('puppy')
+            setAge(['puppy'])
             if(young) {
                 setAge((state) => [...state, 'young'])
             }
@@ -60,6 +59,7 @@ export default function Adopt(){
             }
         }
         if(young) {
+            setAge(['young'])
             if(puppy) {
                 setAge((state) => [...state, 'puppy'])
             }
@@ -71,7 +71,7 @@ export default function Adopt(){
             }
         }
         if(adult) {
-            setAge('adult')
+            setAge(['adult'])
             if(young) {
                 setAge((state) => [...state, 'young'])
             }
@@ -83,7 +83,7 @@ export default function Adopt(){
             }
         }
         if(senior) {
-            setAge('senior')
+            setAge(['senior'])
             if(young) {
                 setAge((state) => [...state, 'young'])
             }
@@ -126,25 +126,40 @@ export default function Adopt(){
     }
 
 
-
     useEffect(() => {
       setResults(DogInfoArr)
       if(sex){
           setResults(dogObj[`${sex}`].all)
-          if(age && typeof age === 'string'){
-              setResults(dogObj[`${sex}`][`${age}`].all)
+          if(age && age.length === 1){
+              setResults(dogObj[`${sex}`][`${age[0]}`].all)
               if(size){
-                  setResults(dogObj[`${sex}`][`${age}`][`${size}`])
+                  setResults(dogObj[`${sex}`][`${age[0]}`][`${size}`])
               }
           }
+          if(age && age.length > 1){
+              const allAges = age.map(item => [...dogObj[`${sex}`][`${item}`].all])
+              setResults(allAges.flat())
+              if(size){
+                const allAgesAndSize = age.map(item => dogObj[`${sex}`][`${item}`][`${size}`])  
+                setResults(allAgesAndSize)           
+            }
+          }
       }
-      if(age && typeof age === 'string'){
-        setResults(dogObj[`${age}`].all)
+      if(age && age.length === 1){
+        setResults(dogObj[`${age[0]}`].all)
         if(size){
-            setResults(dogObj[`${age}`][`${size}`])
+            setResults(dogObj[`${age[0]}`][`${size}`])
         }  
         }
-        if(size){
+        if(age && age.length > 1){
+            const allAges = age.map(item => [...dogObj[`${item}`].all])
+            setResults(allAges.flat())
+            if(size){
+                const allAgesAndSize = age.map(item => dogObj[`${item}`][`${size}`])  
+                setResults(allAgesAndSize)           
+            }
+        }
+     if(size){
             setResults(dogObj[`${size}`].all)
             if(sex){
                 setResults(dogObj[`${size}`][`${sex}`])
