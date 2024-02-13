@@ -49,15 +49,50 @@ export default function Adopt(){
 
         if(puppy) {
             setAge('puppy')
+            if(young) {
+                setAge((state) => [...state, 'young'])
+            }
+            if(adult) {
+                setAge((state) => [...state, 'adult'])
+            }
+            if(senior) {
+                setAge((state) => [...state, 'senior'])
+            }
         }
         if(young) {
-            setAge('young')
+            if(puppy) {
+                setAge((state) => [...state, 'puppy'])
+            }
+            if(adult) {
+                setAge((state) => [...state, 'adult'])
+            }
+            if(senior) {
+                setAge((state) => [...state, 'senior'])
+            }
         }
         if(adult) {
             setAge('adult')
+            if(young) {
+                setAge((state) => [...state, 'young'])
+            }
+            if(puppy) {
+                setAge((state) => [...state, 'puppy'])
+            }
+            if(senior) {
+                setAge((state) => [...state, 'senior'])
+            }
         }
         if(senior) {
             setAge('senior')
+            if(young) {
+                setAge((state) => [...state, 'young'])
+            }
+            if(adult) {
+                setAge((state) => [...state, 'adult'])
+            }
+            if(puppy) {
+                setAge((state) => [...state, 'puppy'])
+            }
         }
         if(puppy && young && adult && senior){
             setAge(null)
@@ -96,14 +131,14 @@ export default function Adopt(){
       setResults(DogInfoArr)
       if(sex){
           setResults(dogObj[`${sex}`].all)
-          if(age){
+          if(age && typeof age === 'string'){
               setResults(dogObj[`${sex}`][`${age}`].all)
               if(size){
                   setResults(dogObj[`${sex}`][`${age}`][`${size}`])
               }
           }
       }
-      if(age){
+      if(age && typeof age === 'string'){
         setResults(dogObj[`${age}`].all)
         if(size){
             setResults(dogObj[`${age}`][`${size}`])
@@ -136,15 +171,15 @@ export default function Adopt(){
                         <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Sex</summary>
                         <ul className="py-4 shadow text-[1rem] font-[300] bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                             <li>
-                                <div className='flex justify-between items-center px-[0.1rem]'>
+                                <div className='flex justify-between items-center'>
                                     <label htmlFor="female">Female</label>
-                                    <input type="radio" id="female" name="gender" value="female" />
+                                    <input type="checkbox" id="female" name="gender" value="female" />
                                 </div>
                             </li>
                             <li>
-                                <div className='flex justify-between items-center px-[0.1rem]'>
+                                <div className='flex justify-between items-center'>
                                     <label htmlFor="male">Male</label>
-                                    <input type="radio" id="male" name="gender" value="male" />
+                                    <input type="checkbox" id="male" name="gender" value="male" />
                                 </div>
                             </li>
                         </ul>
@@ -204,15 +239,15 @@ export default function Adopt(){
                     <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Sort</summary>
                     <ul className="py-4 shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
                         <li>
-                            <div className='flex justify-between items-center px-[0.1rem]'>
+                            <div className='flex justify-between items-center'>
                                 <label htmlFor="longest">Longest Stay</label>
-                                <input type="radio" id="longest" name="sortOption" />
+                                <input type="checkbox" id="longest" name="sortOption" />
                             </div>
                         </li>
                         <li>
-                            <div className='flex justify-between items-center px-[0.1rem]'>
+                            <div className='flex justify-between items-center'>
                                 <label htmlFor="shortest">Shortest Stay</label>
-                                <input type="radio" id="shortest" name="sortOption" />
+                                <input type="checkbox" id="shortest" name="sortOption" />
                             </div>
                         </li>
                     </ul>
