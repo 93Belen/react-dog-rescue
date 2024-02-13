@@ -18,7 +18,10 @@ export default function Adopt(){
     const [results , setResults] = useState([]);
 
     const dogObj = OrganizeDogInfo(DogInfoArr);
-    const breeds = DogInfoArr.map((dog) => dog.breed)
+    const breeds = DogInfoArr.filter((dog, index, arr) => {
+        // Check if the current dog's breed is the first occurrence in the array
+        return arr.findIndex(d => d.breed === dog.breed) === index;
+    }).map(dog => dog.breed);
     console.log(dogObj)
 
   const onChange = () => {
@@ -190,7 +193,7 @@ export default function Adopt(){
                         {(breeds.map(item => {
                         return  (
                             <li><div className='flex justify-between items-center'>
-                            <label for={item} >{item}</label>
+                            <label for={item}>{item}</label>
                             <input type="checkbox" id={item} name={item} />
                             </div></li>
                         )

@@ -32,7 +32,7 @@ export const DogInfoArr = [
     {
         sex: 'Male',
         age: 'Adult',
-        breed: 'Rottweiler',
+        breed: 'Rottwailer',
         size: 'Large'
     },
     {
