@@ -108,13 +108,31 @@ export default function Adopt(){
         const large = document.getElementById('large').checked
        
         if(small) {
-            setSize('small')
+            setSize(['small'])
+            if(medium) {
+                setSize((state) => [...state, 'medium'])
+            }
+            if(large) {
+                setSize((state) => [...state, 'large'])
+            }
         }
         if(medium) {
-            setSize('medium')
+            setSize(['medium'])
+            if(small) {
+                setSize((state) => [...state, 'small'])
+            }
+            if(large) {
+                setSize((state) => [...state, 'large'])
+            }
         }
         if(large) {
-            setSize('large')
+            setSize(['large'])
+            if(medium) {
+                setSize((state) => [...state, 'medium'])
+            }
+            if(small) {
+                setSize((state) => [...state, 'small'])
+            }
         }
         if(small && medium && large){
             setSize(null)
@@ -131,11 +149,12 @@ export default function Adopt(){
       if(sex){
           setResults(dogObj[`${sex}`].all)
           if(age){
-              const allAges = age.map(item => [...dogObj[`${sex}`][`${item}`].all])
-              setResults(allAges.flat())
+              const allAges = age.map(item => [...dogObj[`${sex}`][`${item}`].all]).flat()
+              setResults(allAges)
               if(size){
-                const allAgesAndSize = age.map(item => dogObj[`${sex}`][`${item}`][`${size}`])  
-                setResults(allAgesAndSize)           
+                const allAgesAndSizesSelected = allAges.filter(item => size.includes(item.size.toLowerCase()))
+                setResults(allAgesAndSizesSelected)   
+                console.log(results)   
             }
           }
       }
@@ -148,9 +167,13 @@ export default function Adopt(){
             }
         }
      if(size){
-            setResults(dogObj[`${size}`].all)
+        const allSizes = size.map(item => [...dogObj[`${item}`].all]).flat()
+        setResults(allSizes)
             if(sex){
-                setResults(dogObj[`${size}`][`${sex}`])
+                const onlySelectedSex = allSizes.filter(item => item.sex.toLowerCase() === sex)
+                console.log(onlySelectedSex)
+                console.log(allSizes)
+                setResults(onlySelectedSex)
             }
         }
 
