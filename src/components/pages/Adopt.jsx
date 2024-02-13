@@ -6,7 +6,7 @@ import OrganizeDogInfo from "../../DogInfo/OrganizeDogInfo";
 export default function Adopt(){
     // currently working on
     const [sex, setSex] = useState();
-    const [age, setAge] = useState([]);
+    const [age, setAge] = useState();
     const [size, setSize] = useState();
      
     // future functionality
@@ -130,13 +130,7 @@ export default function Adopt(){
       setResults(DogInfoArr)
       if(sex){
           setResults(dogObj[`${sex}`].all)
-          if(age && age.length === 1){
-              setResults(dogObj[`${sex}`][`${age[0]}`].all)
-              if(size){
-                  setResults(dogObj[`${sex}`][`${age[0]}`][`${size}`])
-              }
-          }
-          if(age && age.length > 1){
+          if(age){
               const allAges = age.map(item => [...dogObj[`${sex}`][`${item}`].all])
               setResults(allAges.flat())
               if(size){
@@ -145,13 +139,7 @@ export default function Adopt(){
             }
           }
       }
-      if(age && age.length === 1){
-        setResults(dogObj[`${age[0]}`].all)
-        if(size){
-            setResults(dogObj[`${age[0]}`][`${size}`])
-        }  
-        }
-        if(age && age.length > 1){
+        if(age){
             const allAges = age.map(item => [...dogObj[`${item}`].all])
             setResults(allAges.flat())
             if(size){
