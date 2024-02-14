@@ -230,6 +230,13 @@ export default function Adopt(){
         setResults(dogToReturn)
     }, [sex, age, size, breed])
 
+    useEffect(() => {
+        const orgByDate;
+        if(sort === 'shortest'){
+            
+        }
+    }, [sort])
+
 
 
 
