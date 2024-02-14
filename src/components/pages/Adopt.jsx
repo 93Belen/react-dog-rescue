@@ -147,18 +147,20 @@ export default function Adopt(){
     useEffect(() => {
       setResults(DogInfoArr)
       if(sex){
-          setResults(dogObj[`${sex}`].all)
+          let dogToReturn = []
+          dogToReturn = dogObj[`${sex}`].all;
           if(age){
               const allAges = age.map(item => [...dogObj[`${sex}`][`${item}`].all]).flat()
-              setResults(allAges)
+              dogToReturn= allAges;
               if(size){
                 const allAgesAndSizesSelected = allAges.filter(item => size.includes(item.size.toLowerCase()))
-                setResults(allAgesAndSizesSelected)   
-                console.log(results)   
+                dogToReturn = allAgesAndSizesSelected;  
             }
           }
+          console.log(dogToReturn)
+          setResults(dogToReturn)
       }
-        if(age){
+        if(age && !sex){
             const allAges = age.map(item => [...dogObj[`${item}`].all])
             setResults(allAges.flat())
             if(size){
@@ -166,7 +168,7 @@ export default function Adopt(){
                 setResults(allAgesAndSize)           
             }
         }
-     if(size){
+     if(size && !age){
         const allSizes = size.map(item => [...dogObj[`${item}`].all]).flat()
         setResults(allSizes)
             if(sex){
