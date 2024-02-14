@@ -161,10 +161,10 @@ export default function Adopt(){
           setResults(dogToReturn)
       }
         if(age && !sex){
-            const allAges = age.map(item => [...dogObj[`${item}`].all])
-            setResults(allAges.flat())
+            const allAges = age.map(item => [...dogObj[`${item}`].all]).flat()
+            setResults(allAges)
             if(size){
-                const allAgesAndSize = age.map(item => dogObj[`${item}`][`${size}`])  
+                const allAgesAndSize = allAges.filter(item => size.includes(item.size.toLowerCase()))
                 setResults(allAgesAndSize)           
             }
         }
