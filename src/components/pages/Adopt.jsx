@@ -10,9 +10,19 @@ export default function Adopt(){
     const [size, setSize] = useState();
      
     // future functionality
-    const [breed, setBreed] = useState();
+    const [breed, setBreed] = useState([]);
     const [sort, setSort] = useState();
 
+    // add selected breed to state
+    const addOrRemoveBreed = (breedSelected) => {
+        if(breed.includes(breedSelected)){
+            const filterBreed = breed.filter((selection) => selection !== breedSelected)
+            setBreed(filterBreed)
+        }
+        else {
+            setBreed((state) => [...state, breedSelected])
+        }
+    }
 
     // search result
     const [results , setResults] = useState([]);
@@ -145,9 +155,8 @@ export default function Adopt(){
 
 
     useEffect(() => {
-      setResults(DogInfoArr)
+      let dogToReturn = DogInfoArr
       if(sex){
-          let dogToReturn = []
           dogToReturn = dogObj[`${sex}`].all;
           if(age){
               const allAges = age.map(item => [...dogObj[`${sex}`][`${item}`].all]).flat()
@@ -157,29 +166,44 @@ export default function Adopt(){
                 dogToReturn = allAgesAndSizesSelected;  
             }
           }
-          console.log(dogToReturn)
-          setResults(dogToReturn)
+          if(breed.length > 0){
+            const resultsWithBreed = dogToReturn.filter((item) => breed.includes(item.breed))
+            dogToReturn = resultsWithBreed
+        }
       }
         if(age && !sex){
             const allAges = age.map(item => [...dogObj[`${item}`].all]).flat()
-            setResults(allAges)
+            dogToReturn = allAges
             if(size){
-                const allAgesAndSize = allAges.filter(item => size.includes(item.size.toLowerCase()))
-                setResults(allAgesAndSize)           
+                const allAgesAndSize = allAges.filter(item => size.includes(item.size.toLowerCase())) 
+                dogToReturn = allAgesAndSize       
+            }
+            if(breed.length > 0){
+                const resultsWithBreed = dogToReturn.filter((item) => breed.includes(item.breed))
+                dogToReturn = resultsWithBreed
             }
         }
      if(size && !age){
         const allSizes = size.map(item => [...dogObj[`${item}`].all]).flat()
-        setResults(allSizes)
+        dogToReturn = allSizes
             if(sex){
                 const onlySelectedSex = allSizes.filter(item => item.sex.toLowerCase() === sex)
-                console.log(onlySelectedSex)
-                console.log(allSizes)
-                setResults(onlySelectedSex)
+                // setResults(onlySelectedSex)
+                dogToReturn = onlySelectedSex
+            }
+            if(breed.length > 0){
+                const resultsWithBreed = dogToReturn.filter((item) => breed.includes(item.breed))
+                dogToReturn = resultsWithBreed
             }
         }
 
-    }, [sex, age, size])
+        if(breed.length > 0 && !sex && !age && !size){
+            const resultsWithBreed = DogInfoArr.filter((item) => breed.includes(item.breed))
+            dogToReturn = resultsWithBreed
+        }
+       
+        setResults(dogToReturn)
+    }, [sex, age, size, breed])
 
 
 
@@ -257,7 +281,7 @@ export default function Adopt(){
                         return  (
                             <li><div className='flex justify-between items-center'>
                             <label for={item}>{item}</label>
-                            <input type="checkbox" id={item} name={item} />
+                            <input onClick={() => addOrRemoveBreed(item)} type="checkbox" id={item} name={item} />
                             </div></li>
                         )
                     }))}
