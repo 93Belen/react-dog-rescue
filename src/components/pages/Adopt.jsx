@@ -13,6 +13,9 @@ export default function Adopt(){
     const [breed, setBreed] = useState([]);
     const [sort, setSort] = useState();
 
+      // search result
+      const [results , setResults] = useState([]);
+
     // add selected breed to state
     const addOrRemoveBreed = (breedSelected) => {
         if(breed.includes(breedSelected)){
@@ -24,14 +27,21 @@ export default function Adopt(){
         }
     }
 
-    // search result
-    const [results , setResults] = useState([]);
-
     const dogObj = OrganizeDogInfo(DogInfoArr);
     const breeds = DogInfoArr.filter((dog, index, arr) => {
         // Check if the current dog's breed is the first occurrence in the array
         return arr.findIndex(d => d.breed === dog.breed) === index;
     }).map(dog => dog.breed);
+
+    const oldestToNewestDate = (arrayOfDates) => {
+        return arrayOfDates.sort((a, b) => a - b)
+        
+    }
+    const newestToOldestDate = (arrayOfDates) => {
+        return arrayOfDates.sort((a, b) => a + b)
+        
+    }
+
 
   const onChange = () => {
         // SEX
@@ -151,6 +161,21 @@ export default function Adopt(){
             setSize(null)
         }
 
+        // SORT
+        const shortest = document.getElementById('shortest').checked
+        const longest = document.getElementById('longest').checked
+        if(shortest && longest){
+            setSort(null)
+        }
+        if(!shortest && !longest){
+            setSort(null)
+        }
+        if(shortest){
+            setSort('shortest')
+        }
+        if(longest){
+            setSort('longest')
+        }
     }
 
 
