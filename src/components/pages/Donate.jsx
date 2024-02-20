@@ -12,7 +12,7 @@ export default function Donate(){
                     Together, we can make a difference.
                     </p>
                 </section>
-                <section className='flex flex-col gap-6 justify-center w-full items-center md:grid md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 xl:px-32 w-full p-4 md:p-12 py-12 pt-4'>
+                <section className='flex flex-col gap-6 justify-center items-center md:grid md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 xl:px-32 2xl:gap-y-20 w-full 2xl:w-[80%] 2xl:m-auto p-4 md:p-12 py-12 pt-4'>
                     <DonationCard title='Monthly contribution' text='Sign up for recurring monthly donations to help us continue our life-saving mission.' donateButton={true} />
                     <DonationCard title='Venmo' text='Donate via Venmo - @lucky13rescue' donateButton={false} />
                     <DonationCard title='Paypal' text='Donate via PayPal' donateButton={true} />
