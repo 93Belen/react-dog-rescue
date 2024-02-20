@@ -14,7 +14,7 @@ export default function Adopt(){
     const [sort, setSort] = useState();
 
       // search result
-      const [results , setResults] = useState(DogInfoArr);
+      const [results , setResults] = useState();
 
     // add selected breed to state
     const addOrRemoveBreed = (breedSelected) => {
@@ -34,11 +34,11 @@ export default function Adopt(){
     }).map(dog => dog.breed);
 
     const oldestToNewestDate = (arrayOfObjects) => {
-        return arrayOfObjects.sort((a, b) => b.arrived - a.arrived);
+        return arrayOfObjects.sort((a, b) => a.arrived - b.arrived);
     };
     
     const newestToOldestDate = (arrayOfObjects) => {
-        return arrayOfObjects.sort((a, b) => a.arrived - b.arrived);
+        return arrayOfObjects.sort((a, b) => b.arrived - a.arrived);
     };
     
 
@@ -228,18 +228,7 @@ export default function Adopt(){
         setResults(dogToReturn)
     }, [sex, age, size, breed])
 
-    // useEffect(() => {
-    //     let orgByDate;
-    //     if(sort === 'longest'){
-    //         orgByDate = oldestToNewestDate(results)
-    //         setResults(orgByDate)
-    //     }
-    //     if(sort === 'shortest'){
-    //         orgByDate = newestToOldestDate(results)
-    //         setResults(orgByDate)
-    //     }
-    //     console.log(orgByDate)
-    // }, [sort, sex, age, size, breed])
+
 
 
 
@@ -329,13 +318,13 @@ export default function Adopt(){
                     <li>
                         <div className='flex justify-between items-center pr-[0.1rem]'>
                             <label htmlFor="longest">Longest Stay</label>
-                            <input type="checkbox" id="longest" name="sortOption" value="longest"/>
+                            <input type="radio" id="longest" name="sortOption" value="longest" defaultChecked />
                         </div>
                     </li>
                     <li>
                         <div className='flex justify-between items-center pr-[0.1rem]'>
                             <label htmlFor="shortest">Shortest Stay</label>
-                            <input type="checkbox" id="shortest" name="sortOption" value="shortest" />
+                            <input type="radio" id="shortest" name="sortOption" value="shortest" />
                         </div>
                     </li>
                 </ul>
@@ -345,10 +334,21 @@ export default function Adopt(){
                     </header>
                 </div>
                 <section className='xl:px-32 w-full p-4 md:p-12 py-12 flex flex-col gap-6 lg:grid grid-cols-2 2xl:grid-cols-3'>
-                    {(results.map(dog => {
-                        return <DogCard sex={dog.sex} size={dog.size} age={dog.age} breed={dog.breed} />
-                    }))}
-                    
+                {results && (() => {
+                    let sortedResults = []
+                    if(sort === 'shortest'){
+                        sortedResults = newestToOldestDate(results)
+                    }
+                    else if(sort === 'longest'){
+                        sortedResults = oldestToNewestDate(results)
+                    }
+                    else {
+                        sortedResults = oldestToNewestDate(results)
+                    }
+                    return sortedResults.map(dog => {
+                            return  <DogCard sex={dog.sex} size={dog.size} age={dog.age} breed={dog.breed} />
+                    })
+                })()}
                 </section>
             </div>
     )
