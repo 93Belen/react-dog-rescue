@@ -159,22 +159,6 @@ export default function Adopt(){
         if(!small && !medium && !large){
             setSize(null)
         }
-
-        // SORT
-        const shortest = document.getElementById('shortest').checked
-        const longest = document.getElementById('longest').checked
-        if(shortest && longest){
-            setSort(null)
-        }
-        if(!shortest && !longest){
-            setSort(null)
-        }
-        if(shortest){
-            setSort('shortest')
-        }
-        if(longest){
-            setSort('longest')
-        }
     }
 
 
@@ -225,7 +209,8 @@ export default function Adopt(){
             const resultsWithBreed = DogInfoArr.filter((item) => breed.includes(item.breed))
             dogToReturn = resultsWithBreed
         }
-       
+        
+        dogToReturn = newestToOldestDate(dogToReturn)
         setResults(dogToReturn)
     }, [sex, age, size, breed])
 
@@ -240,7 +225,7 @@ export default function Adopt(){
             setResults(orgByDate)
         }
         console.log(orgByDate)
-    })
+    }, [sort])
 
 
 
@@ -330,13 +315,13 @@ export default function Adopt(){
                     <li>
                         <div className='flex justify-between items-center pr-[0.1rem]'>
                             <label htmlFor="longest">Longest Stay</label>
-                            <input type="radio" id="longest" name="sortOption" value="longest" defaultChecked />
+                            <input onClick={() => setSort('longest')} type="radio" id="longest" name="sortOption" value="longest" defaultChecked />
                         </div>
                     </li>
                     <li>
                         <div className='flex justify-between items-center pr-[0.1rem]'>
                             <label htmlFor="shortest">Shortest Stay</label>
-                            <input type="radio" id="shortest" name="sortOption" value="shortest" />
+                            <input onClick={() => setSort('shortest')} type="radio" id="shortest" name="sortOption" value="shortest" />
                         </div>
                     </li>
                 </ul>
