@@ -353,7 +353,7 @@ export default function Adopt(){
                         sortedResults = oldestToNewestDate(results)
                     }
                     return sortedResults.map((dog, index) => {
-                            return  <DogCard key={dog.arrived + dog.sex} arrived={dog.arrived} sex={dog.sex} size={dog.size} age={dog.age} breed={dog.breed} />
+                            return  <DogCard name={dog.name} key={dog.arrived + dog.sex} arrived={dog.arrived} sex={dog.sex} size={dog.size} age={dog.age} breed={dog.breed} />
                     })
                 })()}
                 </section>

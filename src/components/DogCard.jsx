@@ -11,6 +11,7 @@ export default function DogCard(props){
     const breed = props.breed;
     const size = props.size;
     const arrived = props.arrived
+    const name = props.name
 
     // Define options for date formatting
         const options = { 
@@ -27,7 +28,7 @@ export default function DogCard(props){
                 <img className='w-full rounded-lg object-cover object-[top_left] md:w-[120%]' src="/troy.png" alt="" />
                 <div className='w-full flex justify-between md:flex-col min-h-[40px]'>
                     <div className='flex flex-col gap-4 md:justify-between'>
-                    <Link to='/dog-info'><h3 className='text-[1.6rem] h-fit cursor-pointer'>Dog's Name</h3></Link>
+                    <Link to='/dog-info'><h3 className='text-[1.6rem] h-fit cursor-pointer'>{name}</h3></Link>
                     <div className='hidden md:flex flex-wrap flex-row gap-1'>
                         <Chip text={sex} />
                         <Chip text={size} />
