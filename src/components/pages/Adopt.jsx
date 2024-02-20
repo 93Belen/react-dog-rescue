@@ -11,7 +11,7 @@ export default function Adopt(){
      
     // future functionality
     const [breed, setBreed] = useState([]);
-    const [sort, setSort] = useState();
+    const [sort, setSort] = useState('longest');
 
       // search result
       const [results , setResults] = useState([]);
@@ -196,7 +196,6 @@ export default function Adopt(){
         dogToReturn = allSizes
             if(sex){
                 const onlySelectedSex = allSizes.filter(item => item.sex.toLowerCase() === sex)
-                // setResults(onlySelectedSex)
                 dogToReturn = onlySelectedSex
             }
             if(breed.length > 0){
@@ -209,8 +208,6 @@ export default function Adopt(){
             const resultsWithBreed = DogInfoArr.filter((item) => breed.includes(item.breed))
             dogToReturn = resultsWithBreed
         }
-        
-        dogToReturn = newestToOldestDate(dogToReturn)
         setResults(dogToReturn)
     }, [sex, age, size, breed])
 
@@ -225,7 +222,7 @@ export default function Adopt(){
             setResults(orgByDate)
         }
         console.log(orgByDate)
-    }, [sort])
+    }, [sort, sex, age, size, breed])
 
 
 
