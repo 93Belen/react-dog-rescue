@@ -33,14 +33,13 @@ export default function Adopt(){
         return arr.findIndex(d => d.breed === dog.breed) === index;
     }).map(dog => dog.breed);
 
-    const oldestToNewestDate = (arrayOfDates) => {
-        return arrayOfDates.sort((a, b) => a - b)
-        
-    }
-    const newestToOldestDate = (arrayOfDates) => {
-        return arrayOfDates.sort((a, b) => a + b)
-        
-    }
+    const oldestToNewestDate = (arrayOfObjects) => {
+        return arrayOfObjects.sort((a, b) => a.arrived - b.arrived);
+    };
+    
+    const newestToOldestDate = (arrayOfObjects) => {
+        return arrayOfObjects.sort((a, b) => b.arrived - a.arrived);
+    };
 
 
   const onChange = () => {
@@ -230,12 +229,15 @@ export default function Adopt(){
         setResults(dogToReturn)
     }, [sex, age, size, breed])
 
-    // useEffect(() => {
-    //     const orgByDate;
-    //     if(sort === 'shortest'){
+    useEffect(() => {
+        let orgByDate;
+        if(sort === 'shortest'){
             
-    //     }
-    // }, [sort])
+        }
+        if(sort === 'longest'){
+            
+        }
+    }, [sort])
 
 
 
