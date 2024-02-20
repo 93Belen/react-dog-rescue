@@ -242,7 +242,7 @@ export default function Adopt(){
 
 
     return (
-            <div className='text-black'>
+            <div className='text-black h-fit'>
                 <section className='xl:px-32 w-full p-4 md:p-12 py-12 pt-4 flex flex-col gap-6'>
                     <h1 className='text-[2rem] md:text-[2.5rem] h-fit'>Adoptable Dogs</h1>
                 </section>
@@ -340,7 +340,7 @@ export default function Adopt(){
 
                     </header>
                 </div>
-                <section ref={parent} className='xl:px-32 w-full p-4 md:p-12 py-12 flex flex-col gap-6 lg:grid grid-cols-2 2xl:grid-cols-3'>
+                <section ref={parent} className='xl:px-32 w-full p-4 md:p-12 py-12 flex flex-col gap-6 lg:grid grid-cols-2 2xl:grid-cols-3 h-fit'>
                 {results && (() => {
                     let sortedResults = []
                     if(sort === 'shortest'){
