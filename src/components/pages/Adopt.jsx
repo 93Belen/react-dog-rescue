@@ -346,7 +346,7 @@ export default function Adopt(){
                         sortedResults = oldestToNewestDate(results)
                     }
                     return sortedResults.map(dog => {
-                            return  <DogCard sex={dog.sex} size={dog.size} age={dog.age} breed={dog.breed} />
+                            return  <DogCard arrived={dog.arrived} sex={dog.sex} size={dog.size} age={dog.age} breed={dog.breed} />
                     })
                 })()}
                 </section>
