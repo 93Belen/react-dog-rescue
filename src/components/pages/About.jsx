@@ -19,7 +19,7 @@ export default function About(){
                 whileInView={{ opacity: 1}}
                 transition={{duration: 0.3}}
                 viewport={{ once: true }}
-                className='w-full col-start-2 row-start-1 row-span-3 rounded-lg md:w-auto md:h-full md:mx-auto object-cover object-[35%]'
+                className='w-full col-start-2 row-start-1 row-span-3 rounded-lg md:w-auto md:h-full md:mx-auto 2xl:w-[60%] 2xl:h-auto object-cover object-[35%]'
                 src="/troy-2.png" alt="" />
                 <motion.p
                  initial={{x: 250}}
