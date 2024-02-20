@@ -14,7 +14,7 @@ export default function Adopt(){
     const [sort, setSort] = useState();
 
       // search result
-      const [results , setResults] = useState([]);
+      const [results , setResults] = useState(DogInfoArr);
 
     // add selected breed to state
     const addOrRemoveBreed = (breedSelected) => {
@@ -34,12 +34,13 @@ export default function Adopt(){
     }).map(dog => dog.breed);
 
     const oldestToNewestDate = (arrayOfObjects) => {
-        return arrayOfObjects.sort((a, b) => a.arrived - b.arrived);
+        return arrayOfObjects.sort((a, b) => b.arrived - a.arrived);
     };
     
     const newestToOldestDate = (arrayOfObjects) => {
-        return arrayOfObjects.sort((a, b) => b.arrived - a.arrived);
+        return arrayOfObjects.sort((a, b) => a.arrived - b.arrived);
     };
+    
 
 
   const onChange = () => {
@@ -159,6 +160,22 @@ export default function Adopt(){
         if(!small && !medium && !large){
             setSize(null)
         }
+
+        // SORT
+        const longest = document.getElementById('longest').checked
+        const shortest = document.getElementById('shortest').checked
+        if(longest && shortest){
+            setSort('longest')
+        }
+        if(!shortest && !longest){
+            setSort('longest')
+        }
+        if(shortest){
+            setSort('shortest')
+        }
+        if(longest){
+            setSort('longest')
+        }
     }
 
 
@@ -214,11 +231,11 @@ export default function Adopt(){
     useEffect(() => {
         let orgByDate;
         if(sort === 'longest'){
-            orgByDate = newestToOldestDate(results) // need to org opposite logic because the mapping of the results
+            orgByDate = oldestToNewestDate(results)
             setResults(orgByDate)
         }
         if(sort === 'shortest'){
-            orgByDate = oldestToNewestDate(results) // need to org opposite logic because the mapping of the results
+            orgByDate = newestToOldestDate(results)
             setResults(orgByDate)
         }
         console.log(orgByDate)
@@ -312,13 +329,13 @@ export default function Adopt(){
                     <li>
                         <div className='flex justify-between items-center pr-[0.1rem]'>
                             <label htmlFor="longest">Longest Stay</label>
-                            <input onClick={() => setSort('longest')} type="radio" id="longest" name="sortOption" value="longest" defaultChecked />
+                            <input type="checkbox" id="longest" name="sortOption" value="longest"/>
                         </div>
                     </li>
                     <li>
                         <div className='flex justify-between items-center pr-[0.1rem]'>
                             <label htmlFor="shortest">Shortest Stay</label>
-                            <input onClick={() => setSort('shortest')} type="radio" id="shortest" name="sortOption" value="shortest" />
+                            <input type="checkbox" id="shortest" name="sortOption" value="shortest" />
                         </div>
                     </li>
                 </ul>
