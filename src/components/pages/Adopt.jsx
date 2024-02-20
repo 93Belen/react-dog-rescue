@@ -1,7 +1,8 @@
 import DogCard from "../DogCard";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { DogInfoArr } from "../../DogInfo/DogInfoArr";
 import OrganizeDogInfo from "../../DogInfo/OrganizeDogInfo";
+import autoAnimate from '@formkit/auto-animate'
 
 export default function Adopt(){
     // currently working on
@@ -15,6 +16,12 @@ export default function Adopt(){
 
       // search result
       const [results , setResults] = useState();
+
+      // animation
+      const parent = useRef(null)
+      useEffect(() => {
+        parent.current && autoAnimate(parent.current)
+      }, [parent])
 
     // add selected breed to state
     const addOrRemoveBreed = (breedSelected) => {
@@ -333,7 +340,7 @@ export default function Adopt(){
 
                     </header>
                 </div>
-                <section className='xl:px-32 w-full p-4 md:p-12 py-12 flex flex-col gap-6 lg:grid grid-cols-2 2xl:grid-cols-3'>
+                <section ref={parent} className='xl:px-32 w-full p-4 md:p-12 py-12 flex flex-col gap-6 lg:grid grid-cols-2 2xl:grid-cols-3'>
                 {results && (() => {
                     let sortedResults = []
                     if(sort === 'shortest'){
@@ -345,8 +352,8 @@ export default function Adopt(){
                     else {
                         sortedResults = oldestToNewestDate(results)
                     }
-                    return sortedResults.map(dog => {
-                            return  <DogCard arrived={dog.arrived} sex={dog.sex} size={dog.size} age={dog.age} breed={dog.breed} />
+                    return sortedResults.map((dog, index) => {
+                            return  <DogCard key={dog.arrived + dog.sex} arrived={dog.arrived} sex={dog.sex} size={dog.size} age={dog.age} breed={dog.breed} />
                     })
                 })()}
                 </section>
