@@ -231,12 +231,15 @@ export default function Adopt(){
 
     useEffect(() => {
         let orgByDate;
-        if(sort === 'shortest'){
-            
-        }
         if(sort === 'longest'){
-            
+            orgByDate = newestToOldestDate(results)
+            setResults(orgByDate)
         }
+        if(sort === 'shortest'){
+            orgByDate = oldestToNewestDate(results)
+            setResults(orgByDate)
+        }
+        console.log(orgByDate)
     }, [sort])
 
 
