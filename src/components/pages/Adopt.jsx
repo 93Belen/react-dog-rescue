@@ -228,18 +228,18 @@ export default function Adopt(){
         setResults(dogToReturn)
     }, [sex, age, size, breed])
 
-    useEffect(() => {
-        let orgByDate;
-        if(sort === 'longest'){
-            orgByDate = oldestToNewestDate(results)
-            setResults(orgByDate)
-        }
-        if(sort === 'shortest'){
-            orgByDate = newestToOldestDate(results)
-            setResults(orgByDate)
-        }
-        console.log(orgByDate)
-    }, [sort, sex, age, size, breed])
+    // useEffect(() => {
+    //     let orgByDate;
+    //     if(sort === 'longest'){
+    //         orgByDate = oldestToNewestDate(results)
+    //         setResults(orgByDate)
+    //     }
+    //     if(sort === 'shortest'){
+    //         orgByDate = newestToOldestDate(results)
+    //         setResults(orgByDate)
+    //     }
+    //     console.log(orgByDate)
+    // }, [sort, sex, age, size, breed])
 
 
 
