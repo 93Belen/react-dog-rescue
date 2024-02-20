@@ -11,7 +11,7 @@ export default function Adopt(){
      
     // future functionality
     const [breed, setBreed] = useState([]);
-    const [sort, setSort] = useState('longest');
+    const [sort, setSort] = useState();
 
       // search result
       const [results , setResults] = useState([]);
