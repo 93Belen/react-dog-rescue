@@ -240,7 +240,7 @@ export default function Adopt(){
             setResults(orgByDate)
         }
         console.log(orgByDate)
-    }, [sort])
+    })
 
 
 
@@ -327,19 +327,20 @@ export default function Adopt(){
                     <details className="dropdown h-full w-[20rem]">
                     <summary className="bg-blue text-white rounded-3xl py-1 px-6 w-[100px] flex justify-center">Sort</summary>
                     <ul className="py-4 max-w-[200px] shadow text-[1rem] font-[300] w-fit bg-blue text-white mt-1 px-4 gap-2 flex flex-col justify-around w-full">
-                        <li>
-                            <div className='flex justify-between items-center'>
-                                <label htmlFor="longest">Longest Stay</label>
-                                <input type="checkbox" id="longest" name="sortOption" />
-                            </div>
-                        </li>
-                        <li>
-                            <div className='flex justify-between items-center'>
-                                <label htmlFor="shortest">Shortest Stay</label>
-                                <input type="checkbox" id="shortest" name="sortOption" />
-                            </div>
-                        </li>
-                    </ul>
+                    <li>
+                        <div className='flex justify-between items-center pr-[0.1rem]'>
+                            <label htmlFor="longest">Longest Stay</label>
+                            <input type="radio" id="longest" name="sortOption" value="longest" defaultChecked />
+                        </div>
+                    </li>
+                    <li>
+                        <div className='flex justify-between items-center pr-[0.1rem]'>
+                            <label htmlFor="shortest">Shortest Stay</label>
+                            <input type="radio" id="shortest" name="sortOption" value="shortest" />
+                        </div>
+                    </li>
+                </ul>
+
                 </details>
 
                     </header>
