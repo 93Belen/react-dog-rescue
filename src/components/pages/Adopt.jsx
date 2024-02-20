@@ -232,11 +232,11 @@ export default function Adopt(){
     useEffect(() => {
         let orgByDate;
         if(sort === 'longest'){
-            orgByDate = newestToOldestDate(results)
+            orgByDate = newestToOldestDate(results) // need to org opposite logic because the mapping of the results
             setResults(orgByDate)
         }
         if(sort === 'shortest'){
-            orgByDate = oldestToNewestDate(results)
+            orgByDate = oldestToNewestDate(results) // need to org opposite logic because the mapping of the results
             setResults(orgByDate)
         }
         console.log(orgByDate)
