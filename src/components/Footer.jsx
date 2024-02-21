@@ -20,7 +20,6 @@ export default function Footer(){
                 <NavLink to='/volunteer'>Volunteer</NavLink>
                 <NavLink to='/adopt'>Dogs</NavLink>
                 <NavLink to='/qualifications/#faqs'>FAQs</NavLink>
-                <NavLink to='/'>Shop</NavLink>
                 <NavLink to='/events'>Events</NavLink>
                 <NavLink to='/'>Board of Directors</NavLink>
                 </div>
