@@ -1,4 +1,5 @@
 import EventCard from "../EventCard";
+import { eventsInfo } from "../EventsInfo/EventsInfo";
 
 export default function Events(){
     return (
@@ -7,11 +8,11 @@ export default function Events(){
                     <h1 className='text-[2rem] md:text-[2.5rem] h-fit'>Events</h1>
                 </section>
                 <section className='flex flex-col gap-6 justify-center w-full items-center xl:px-32 w-full p-4 md:p-12 py-12 pt-4'>
-                    <EventCard title='Puppy Yoga with Yoga Patch' text='Come puppy pose with us and Lucky 13 Rescue! Add some playfulness to your practice while supporting a local canine organization. Class will be...' />
-                    <EventCard title='Puppy Yoga with Yoga Patch' text='Come puppy pose with us and Lucky 13 Rescue! Add some playfulness to your practice while supporting a local canine organization. Class will be...' />
-                    <EventCard title='Puppy Yoga with Yoga Patch' text='Come puppy pose with us and Lucky 13 Rescue! Add some playfulness to your practice while supporting a local canine organization. Class will be...' />
-                    <EventCard title='Puppy Yoga with Yoga Patch' text='Come puppy pose with us and Lucky 13 Rescue! Add some playfulness to your practice while supporting a local canine organization. Class will be...' />
-                    <EventCard title='Puppy Yoga with Yoga Patch' text='Come puppy pose with us and Lucky 13 Rescue! Add some playfulness to your practice while supporting a local canine organization. Class will be...' />
+                    {
+                        eventsInfo.map(event => {
+                            return <EventCard title={event.title} text={event.text} date={event.date} location={event.location} />
+                        })
+                    }
                 </section>
             </div>
     )
