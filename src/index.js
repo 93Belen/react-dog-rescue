@@ -58,7 +58,7 @@ const router = createBrowserRouter([
         element: <Adopt/>
       },
       {
-        path: 'dog-info',
+        path: 'dog-info/:name',
         element: <DogInfo/>
       }
     ]
