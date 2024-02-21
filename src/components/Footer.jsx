@@ -21,7 +21,6 @@ export default function Footer(){
                 <NavLink to='/adopt'>Dogs</NavLink>
                 <NavLink to='/qualifications/#faqs'>FAQs</NavLink>
                 <NavLink to='/events'>Events</NavLink>
-                <NavLink to='/'>Board of Directors</NavLink>
                 </div>
             </section>
             {/* CONTACT */}
