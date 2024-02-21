@@ -1,5 +1,6 @@
 import DonateButton from "./DonateButton";
 import DonateModal from "./DonateModal";
+import { motion } from "framer-motion";
 
 export default function DonationCard(props){
     const title = props.title;
@@ -7,7 +8,9 @@ export default function DonationCard(props){
     const donateButton = props.donateButton;
 
     return (
-        <section
+        <motion.section
+        whileHover={{scale: 1.07}}
+        initial={{ scale: 1}}
         className={`${donateButton ? 'bg-blue' : 'bg-yellow'} justify-self-center h-[300px] min-h-fit md:w-[300px] md:h-[350px] w-[90%] rounded-xl border-black border-2`}>
             <DonateModal />
             <div className='bg-white h-[95%] text-center p-4 flex flex-col justify-around items-center'>
@@ -17,6 +20,6 @@ export default function DonationCard(props){
                     <DonateButton paypal={title === 'Paypal'} />
                 )}                
             </div>
-        </section>
+        </motion.section>
     )
 }

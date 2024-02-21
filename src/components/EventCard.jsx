@@ -12,7 +12,6 @@ export default function EventCard(props){
         <motion.section
         whileHover={{scale: 1.07}}
         initial={{ scale: 1}}
-        viewport={{ once: true }}
          className={`bg-blue justify-self-center h-[450px] md:h-[300px] w-full w-[90%] rounded-xl border-black border-2`}>
             <div className='bg-white h-[95%] text-center p-4 grid grid-cols-[45%_55%] grid-rows-[35%_45%_20%] md:grid-cols-[15%_50%_35%] md:grid-rows-[40%_60%]'>
                 <h3 className='flex flex-col justify-center items-center text-[2rem] border-r-8 border-yellow'><span>{day}</span>{month}</h3>
