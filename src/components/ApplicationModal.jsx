@@ -1,5 +1,5 @@
 export default function ApplicationModal(props){
-    const dog = props.dog;
+    const name = props.name;
     return(
         <section className='text-white'>
             <dialog id="my_modal_adoption" className="modal modal-bottom sm:modal-middle">
@@ -9,7 +9,7 @@ export default function ApplicationModal(props){
                     <input required placeholder='Full Name' className='bg-white text-black p-2 rounded-md' type="text" />
                     <input required placeholder='Email' className='bg-white text-black p-2 rounded-md' type="email" />
                     <select required placeholder='Dog' className='bg-white text-black p-2 rounded-md appearance-none' >
-                    <option selected >{dog}</option>
+                    <option selected >{name}</option>
                     <option value="option 1">option 1</option>
                     <option value="option 1">option 2</option>
                     <option value="option 1">option 3</option>
