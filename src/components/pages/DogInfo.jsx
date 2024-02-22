@@ -8,7 +8,7 @@ import {useParams} from "react-router-dom";
 
 export default function DogInfo(){
     
-    const { name } = useParams();
+    const { name, sex, breed, arrived, size, age } = useParams();
 
     return(
         <section className='text-black w-full h-fit'>
@@ -39,10 +39,10 @@ export default function DogInfo(){
             </div>
             
                 <div className='flex md:justify-between md:max-w-[600px] flex-wrap gap-2'>
-                    <Chip text={'Female'} />
-                    <Chip text={'Big'} />
-                    <Chip text={'Pit Mix'} />
-                    <Chip text={'Young'} />
+                    <Chip text={sex} />
+                    <Chip text={size} />
+                    <Chip text={breed} />
+                    <Chip text={age} />
                 </div>
                 <div className='flex flex-col gap-12'>
                     <motion.ul className='flex flex-col gap-4'>

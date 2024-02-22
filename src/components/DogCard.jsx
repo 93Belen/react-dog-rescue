@@ -28,7 +28,7 @@ export default function DogCard(props){
                     <div className='flex flex-col gap-4 md:justify-between'>
                     <Link
                     to={{
-                        pathname: `/dog-info/${name}`,
+                        pathname: `/dog-info/${name}/${sex}/${breed}/${arrived}/${size}/${age}`,
                         state: { 
                             name: name,
                             sex: sex,

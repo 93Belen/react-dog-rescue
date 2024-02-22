@@ -10,7 +10,7 @@ export default function ReadMoreButton(props){
     return (
         <Link 
         to={{
-            pathname: `/dog-info/${name}`,
+            pathname: `/dog-info/${name}/${sex}/${breed}/${arrived}/${size}/${age}`,
             state: { 
                 name: name,
                 sex: sex,
