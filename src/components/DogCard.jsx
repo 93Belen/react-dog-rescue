@@ -29,7 +29,15 @@ export default function DogCard(props){
                     <Link
                     to={{
                         pathname: `/dog-info/${name}`,
-                        state: { name: name}
+                        state: { 
+                            name: name,
+                            sex: sex,
+                            age: age,
+                            breed: breed,
+                            size: size,
+                            arrived: arrived
+                         }
+
                     }}
                     ><h3 className='text-[1.6rem] h-fit cursor-pointer'>{name}</h3></Link>
                     <div className='hidden md:flex flex-wrap flex-row gap-1'>
@@ -41,7 +49,7 @@ export default function DogCard(props){
                     <p className='text-[0.65rem] hidden md:block text-gray italic'>Arrived on {arrived.toLocaleDateString('en-US', options)}</p>
                     </div>
                     <div className='md:flex flex-col gap-4 hidden'>
-                        <ReadMoreButton/>
+                        <ReadMoreButton name={name} arrived={arrived} sex={sex} size={size} age={age} breed={breed}/>
                         <AdoptButton />
                     </div>     
                 </div>
