@@ -4,15 +4,17 @@ import AdoptButton from '../AdoptButton'
 import DonateButton from '../DonateButton'
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router";
+import {useParams} from "react-router-dom";
 
 export default function DogInfo(){
-    const { state } = useLocation()
+    
+    const { name } = useParams();
+
     return(
         <section className='text-black w-full h-fit'>
             <section className='xl:px-32 w-full p-4 md:p-12 md:py-0 py-12 flex flex-col gap-6 md:gap-12'>
             <Link className='text-[3rem]' to='/adopt'><FaArrowLeft /></Link>
-            <h1 className="text-[2rem] md:text-[2.5rem] h-fit">{state.name}</h1>
+            <h1 className="text-[2rem] md:text-[2.5rem] h-fit">{name}</h1>
             <div className='mx-auto'>
             <div className="carousel w-auto md:w-[550px] m-auto max-h-[35vh]">
                 <div id="item1" className="carousel-item w-full rounded-lg">
