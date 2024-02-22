@@ -97,7 +97,7 @@ export default function DogInfo(){
                     https://linktr.ee/lucky13rescue.
                     </p>
                 </div>
-                <div className='flex justify-between md:max-w-[500px] gap-4 flex-wrap'>
+                <div className='flex justify-between md:max-w-[500px] gap-4 flex-wrap pb-4 md:pb-20' >
                     <AdoptButton />
                     <DonateButton/>
                 </div>
