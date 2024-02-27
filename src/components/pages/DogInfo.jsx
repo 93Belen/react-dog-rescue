@@ -52,49 +52,11 @@ export default function DogInfo(){
                         transition={{duration: 0.5, delay: 0}}
                         viewport={{ once: true }}
                         >
-                        <span className='font-bold'>ANIMAL ID:</span> LUCK-A-860
-                        </motion.li>
-                        <motion.li
-                        initial={{x: -250}}
-                        whileInView={{ x: 0}}
-                        transition={{duration: 0.5, delay: 0.1}}
-                        viewport={{ once: true }}
-                        >
-                        <span className='font-bold'>BREED:</span> Terrier, American Pit Bull
-                        </motion.li>
-                        <motion.li
-                        initial={{x: -250}}
-                        whileInView={{ x: 0}}
-                        transition={{duration: 0.5, delay: 0.2}}
-                        viewport={{ once: true }}
-                        >
-                        <span className='font-bold'>AGE:</span> 3Y/8M/1W
-                        </motion.li>
-                        <motion.li
-                        initial={{x: -250}}
-                        whileInView={{ x: 0}}
-                        transition={{duration: 0.5, delay: 0.3}}
-                        viewport={{ once: true }}
-                        >
-                        <span className='font-bold'>ADOPTION FEE:</span> $0 
+                        <span className='font-bold'>ARRIVED:</span> {arrived}
                         </motion.li>
                     </motion.ul>
                     <p>
-                    Meet Brie! Hi guys, I'm a super sweet and cuddly pittie. 
-                    I came to Lucky 13 Rescue pretty sad after my Dad passed away, 
-                    but this really nice foster family took me in and have been showing 
-                    me the real good life. I love my kennel, I keep it clean and tidy.
-                    I can be a little protective of my food, so I like to eat away 
-                    from my foster siblings, but I LOVE to snuggle with them. 
-                    I'm gentle and goofy and have a great personality. 
-                    I have some foster siblings to play with and I love to wrestle. 
-                    Do you think you would have a place in your heart and home for a girl like me?
-                    Brie's estimated birthdate is 4/2/20.Brie's adoption fee has been sponsored
-                    which means to adopt her fee is $0 with an approve application. 
-                    Brie will come with all age-appropriate vaccines, HW prevention, 
-                    microchip, and spay. Want to meet me?? Apply at
-                    https://www.shelterluv.com/matchme/adopt/LUCK/Dog or
-                    https://linktr.ee/lucky13rescue.
+
                     </p>
                 </div>
                 <div className='flex justify-between md:max-w-[500px] gap-4 flex-wrap pb-4 md:pb-20' >
