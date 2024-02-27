@@ -1,3 +1,5 @@
+import { DogInfoArr } from "../DogInfo/DogInfoArr";
+
 export default function ApplicationModal(props){
     const name = props.name;
     return(
@@ -10,10 +12,13 @@ export default function ApplicationModal(props){
                     <input required placeholder='Email' className='bg-white text-black p-2 rounded-md' type="email" />
                     <select required placeholder='Dog' className='bg-white text-black p-2 rounded-md appearance-none' >
                     <option selected >{name}</option>
-                    <option value="option 1">option 1</option>
-                    <option value="option 1">option 2</option>
-                    <option value="option 1">option 3</option>
-                    <option value="option 1">option 4</option>
+                    {
+                        DogInfoArr.map(dog => {
+                            if(dog.name !== name){
+                                return  <option value={dog.name}>{dog.name}</option>
+                            }
+                        })
+                    }
                     </select>
                     <input required placeholder='Street Address' className='bg-white text-black p-2 rounded-md' type="text" />
                     <input required placeholder='City' className='bg-white text-black p-2 rounded-md' type="text" />
