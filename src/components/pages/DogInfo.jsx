@@ -66,7 +66,9 @@ export default function DogInfo(){
                 </div>
                 <div className='flex justify-between md:max-w-[500px] gap-4 flex-wrap pb-4 md:pb-20' >
                     <AdoptButton />
-                    <DonateButton/>
+                    <Link target="_blank" to='/donate' className='bg-yellow rounded-2xl hover:bg-darkyellow duration-1000 font-[200] w-[9.93rem] flex justify-center items-center h-[2.31rem] text-black text-[1.25rem]' >
+                    Donate
+                    </Link>
                 </div>
             </section>
             <section id='faqs' className='bg-gradient-to-b from-blue to-lightblue text-white px-6 py-12 text-center flex flex-col items-center gap-6 md:gap-12'>
