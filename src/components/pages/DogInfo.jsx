@@ -6,6 +6,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import {useParams} from "react-router-dom";
 import { DogInfoArr } from "../../DogInfo/DogInfoArr";
+import ApplicationModal from "../ApplicationModal";
 
 export default function DogInfo(){
     
@@ -15,6 +16,7 @@ export default function DogInfo(){
 
     return(
         <section className='text-black w-full h-fit'>
+            <ApplicationModal name={name} />
             <section className='xl:px-32 w-full p-4 md:p-12 md:py-0 py-12 flex flex-col gap-6 md:gap-12'>
             <Link className='text-[3rem]' to='/adopt'><FaArrowLeft /></Link>
             <h1 className="text-[2rem] md:text-[2.5rem] h-fit">{name}</h1>
