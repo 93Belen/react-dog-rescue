@@ -3,11 +3,13 @@ import AdoptButton from './components/AdoptButton';
 import ApplyButton from './components/ApplyButton';
 import DonateButton from './components/DonateButton';
 import { motion } from "framer-motion"
+import FosterModal from './components/FosterModal';
 
 
 function App() {
   return (
     <div className="App w-full text-black font-[300] h-fit text-[1.25rem]">
+      <FosterModal/>
       <section className='flex box-border md:pb-40 flex-col gap-6 px-4 md:px-10 xl:px-32 py-12 pt-4 md:grid md:grid-cols-2 md:gap-y-10 md:gap-x-10 md:p-12 md:grid-rows-[5%_70%] 2xl:grid-rows-[15%_60%] h-fit'>
           <h1 className='text-[2.5rem] h-fit'>Lucky 13</h1>
           <motion.p 
