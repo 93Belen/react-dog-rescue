@@ -5,10 +5,13 @@ import DonateButton from '../DonateButton'
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import {useParams} from "react-router-dom";
+import { DogInfoArr } from "../../DogInfo/DogInfoArr";
 
 export default function DogInfo(){
     
     const { name, sex, breed, arrived, size, age } = useParams();
+
+    const dog = DogInfoArr.filter(item => item.name === name)
 
     return(
         <section className='text-black w-full h-fit'>
@@ -56,7 +59,7 @@ export default function DogInfo(){
                         </motion.li>
                     </motion.ul>
                     <p>
-
+                        {dog[0].text}
                     </p>
                 </div>
                 <div className='flex justify-between md:max-w-[500px] gap-4 flex-wrap pb-4 md:pb-20' >
