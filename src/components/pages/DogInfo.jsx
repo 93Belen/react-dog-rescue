@@ -1,7 +1,6 @@
 import Chip from "../Chip"
 import { motion } from "framer-motion"
 import AdoptButton from '../AdoptButton'
-import DonateButton from '../DonateButton'
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import {useParams} from "react-router-dom";
@@ -18,7 +17,10 @@ export default function DogInfo(){
         <section className='text-black w-full h-fit'>
             <ApplicationModal name={name} />
             <section className='xl:px-32 w-full p-4 md:p-12 md:py-0 py-12 flex flex-col gap-6 md:gap-12'>
-            <Link className='text-[3rem]' to='/adopt'><FaArrowLeft /></Link>
+           <motion.div
+           whileHover={{ x: [-5, 5, -5, 5]}}
+           initial={{ x: 0 }}
+           ><Link className='text-[3rem]' to='/adopt'><FaArrowLeft /></Link></motion.div>
             <h1 className="text-[2rem] md:text-[2.5rem] h-fit">{name}</h1>
             <div className='mx-auto'>
             <div className="carousel w-auto md:w-[550px] m-auto max-h-[35vh]">
