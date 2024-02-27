@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import ApplyButton from "../ApplyButton";
+import FosterModal from "../FosterModal";
 
 export default function Foster(){
     return (
             <div className='w-full text-black'>
+                <FosterModal/>
                 <section className='text-white bg-gradient-to-b from-blue to-lightblue xl:px-32 w-full p-4 md:p-12 flex flex-col gap-6 md:grid grid-cols-[40%_60%]'>
                 <h1 className='text-[2.5rem] h-fit'>Foster</h1>
                 <motion.p
