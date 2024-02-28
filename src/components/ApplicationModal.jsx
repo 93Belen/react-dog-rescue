@@ -20,11 +20,8 @@ export default function ApplicationModal(props){
                         })
                     }
                     </select>
-                    <input required placeholder='Street Address' className='bg-white text-black p-2 rounded-md' type="text" />
-                    <input required placeholder='City' className='bg-white text-black p-2 rounded-md' type="text" />
-                    <input required placeholder='Postal Code' className='bg-white text-black p-2 rounded-md' type="text" />
-                    <input required placeholder='Phone Number 1' className='bg-white text-black p-2 rounded-md' type="tel" />
-                    <input placeholder='Phone Number 2' className='bg-white text-black p-2 rounded-md' type="tel" />
+                    <input required placeholder='Address' className='bg-white text-black p-2 rounded-md' type="text" />
+                    <input required placeholder='Phone Number' className='bg-white text-black p-2 rounded-md' type="tel" />
                     <button type='submit'>Submit</button>
                 </form>
                 <div className="modal-action justify-start w-full">

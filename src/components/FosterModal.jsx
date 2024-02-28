@@ -7,11 +7,8 @@ export default function FosterModal(){
                 <form className='flex flex-col gap-4 w-full p-5'>
                     <input required placeholder='Full Name' className='bg-white text-black p-2 rounded-md' type="text" />
                     <input required placeholder='Email' className='bg-white text-black p-2 rounded-md' type="email" />
-                    <input required placeholder='Street Address' className='bg-white text-black p-2 rounded-md' type="text" />
-                    <input required placeholder='City' className='bg-white text-black p-2 rounded-md' type="text" />
                     <input required placeholder='Postal Code' className='bg-white text-black p-2 rounded-md' type="text" />
-                    <input required placeholder='Phone Number 1' className='bg-white text-black p-2 rounded-md' type="tel" />
-                    <input placeholder='Phone Number 2' className='bg-white text-black p-2 rounded-md' type="tel" />
+                    <input required placeholder='Phone Number' className='bg-white text-black p-2 rounded-md' type="tel" />
                     <textarea rows={7} placeholder='Tell us about you, your home, family, and preferences' className='bg-white text-black p-2 rounded-md' />
                     <button type='submit'>Submit</button>
                 </form>
