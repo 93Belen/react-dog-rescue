@@ -5,6 +5,7 @@ import DonateButton from './components/DonateButton';
 import { motion } from "framer-motion"
 import FosterModal from './components/FosterModal';
 import ApplicationModal from './components/ApplicationModal';
+import { Link } from 'react-router-dom';
 
 
 function App() {
@@ -119,7 +120,9 @@ function App() {
           </ul>
           Our rescue is run 100% on donations, so we thank you in advance for your generosity!
           </motion.p>
-          <DonateButton/>
+          <Link to='/donate' className='bg-yellow rounded-2xl hover:bg-darkyellow duration-1000 font-[200] w-[9.93rem] flex justify-center items-center h-[2.31rem] text-black text-[1.25rem]' >
+            Donate
+          </Link>
           <motion.img
             initial={{ opacity: 0}}
             whileInView={{ opacity: 1}}
