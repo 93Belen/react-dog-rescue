@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import DonateButton from "../DonateButton";
+import { Link } from "react-router-dom";
 
 export default function Volunteer(){
 
@@ -86,7 +86,9 @@ export default function Volunteer(){
                     They will be adopted into their forever home spayed/neutered, fully vaccinated, microchipped, and le.
                     Tax ID 81-3473567.
                     </motion.p>
-                    <DonateButton/>
+                    <Link to='/donate' className='bg-yellow rounded-2xl hover:bg-darkyellow duration-1000 font-[200] w-[9.93rem] flex justify-center items-center h-[2.31rem] text-black text-[1.25rem]' >
+                        Donate
+                    </Link>
             </section>
             </div>
     )

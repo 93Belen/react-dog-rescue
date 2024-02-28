@@ -1,7 +1,6 @@
 import './App.css';
 import AdoptButton from './components/AdoptButton';
 import ApplyButton from './components/ApplyButton';
-import DonateButton from './components/DonateButton';
 import { motion } from "framer-motion"
 import FosterModal from './components/FosterModal';
 import ApplicationModal from './components/ApplicationModal';
